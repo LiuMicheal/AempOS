@@ -1,0 +1,1800 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALT_L	include/keyboard.h	48;"	d
+ALT_R	include/keyboard.h	49;"	d
+APPS	include/keyboard.h	41;"	d
+AR	Makefile	/^AR		= ar$/;"	m
+ARDStruct	boot/loader.asm	/^ARDStruct		equ	BaseOfLoaderPhyAddr + _ARDStruct$/;"	d
+ARFLAGS	Makefile	/^ARFLAGS		= rcs$/;"	m
+ASM	Makefile	/^ASM		= nasm$/;"	m
+ASMBFLAGS	Makefile	/^ASMBFLAGS	= -I boot\/include\/$/;"	m
+ASMKFLAGS	Makefile	/^ASMKFLAGS	= -I include\/ -f elf$/;"	m
+ASSERT	kernel/lapic.c	30;"	d	file:
+ATA_IDENTIFY	include/hd.h	215;"	d
+ATA_READ	include/hd.h	216;"	d
+ATA_WRITE	include/hd.h	217;"	d
+AT_WINI_IRQ	include/const.h	65;"	d
+ArgLinBase	include/const.h	102;"	d
+ArgLinLimitMAX	include/const.h	103;"	d
+BACKSPACE	include/keyboard.h	37;"	d
+BCAST	kernel/lapic.c	33;"	d	file:
+BOX	include/box.h	/^}BOX, *BOX_PTR;$/;"	t	typeref:struct:box
+BOXMAX	include/const.h	174;"	d
+BOXMNB	include/const.h	173;"	d
+BOX_MANAGE	include/box.h	/^}BOX_MANAGE, *BOX_MANAGE_PTR;$/;"	t	typeref:struct:box_manage
+BOX_MANAGE_PTR	include/box.h	/^}BOX_MANAGE, *BOX_MANAGE_PTR;$/;"	t	typeref:struct:box_manage
+BOX_NODE	include/box.h	/^}BOX_NODE, *BOX_NODE_PTR;$/;"	t	typeref:struct:box_node
+BOX_NODE_PTR	include/box.h	/^}BOX_NODE, *BOX_NODE_PTR;$/;"	t	typeref:struct:box_node
+BOX_PTR	include/box.h	/^}BOX, *BOX_PTR;$/;"	t	typeref:struct:box
+BUF	include/fs_const.h	24;"	d
+BUSY	kernel/lapic.c	34;"	d	file:
+BaseOfEchoFilePhyAddr	kernel/file.c	16;"	d	file:
+BaseOfInit1FilePhyAddr	kernel/file.c	17;"	d	file:
+BaseOfInit2FilePhyAddr	kernel/file.c	18;"	d	file:
+BaseOfInit3FilePhyAddr	kernel/file.c	19;"	d	file:
+BaseOfStack	boot/boot.asm	/^BaseOfStack		equ	0100h	; 调试状态下堆栈基地址(栈底, 从这个位置向低地址生长)$/;"	d
+BaseOfStack	boot/boot.asm	/^BaseOfStack		equ	07c00h	; Boot状态下堆栈基地址(栈底, 从这个位置向低地址生长)$/;"	d
+BaseOfStack	boot/loader.asm	/^BaseOfStack	equ	0100h$/;"	d
+Begin_Int_Atomic	lib/klib.c	/^PUBLIC int Begin_Int_Atomic() {$/;"	f
+BootMessage	boot/boot.asm	/^BootMessage:		db	"Booting  "; 9字节, 不够则用空格补齐. 序号 0$/;"	d
+CAPS_LOCK	include/keyboard.h	52;"	d
+CASCADE_IRQ	include/const.h	58;"	d
+CC	Makefile	/^CC		= gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS		= -I include\/ -c -fno-builtin -fno-stack-protector -m32	-Wall -Wextra -g # added by mingxuan 2018-12-11$/;"	m
+CLOCK_IRQ	include/const.h	56;"	d
+CLOSE	include/type.h	/^	OPEN, CLOSE, READ, WRITE, LSEEK, STAT, UNLINK,$/;"	e	enum:msgtype
+CMOS_PORT	kernel/lapic.c	209;"	d	file:
+CMOS_RETURN	kernel/lapic.c	210;"	d	file:
+CNT	include/fs_const.h	19;"	d
+CPU0_ID	include/cpu.h	120;"	d
+CPU1_ID	include/cpu.h	121;"	d
+CPU2_ID	include/cpu.h	122;"	d
+CPU3_ID	include/cpu.h	123;"	d
+CRTC_ADDR_REG	include/const.h	152;"	d
+CRTC_DATA_REG	include/const.h	153;"	d
+CSREG	include/proc.h	36;"	d
+CTRL_L	include/keyboard.h	46;"	d
+CTRL_R	include/keyboard.h	47;"	d
+CURSOR_H	include/const.h	156;"	d
+CURSOR_L	include/const.h	157;"	d
+DASM	Makefile	/^DASM	= ndisasm$/;"	m
+DASMFLAGS	Makefile	/^DASMFLAGS	= -u -o $(ENTRYPOINT) -e $(ENTRYOFFSET)$/;"	m
+DASMOUTPUT	Makefile	/^DASMOUTPUT	= kernel.bin.asm$/;"	m
+DA_32	include/protect.h	100;"	d
+DA_386CGate	include/protect.h	118;"	d
+DA_386IGate	include/protect.h	119;"	d
+DA_386TGate	include/protect.h	120;"	d
+DA_386TSS	include/protect.h	117;"	d
+DA_C	include/protect.h	110;"	d
+DA_CCO	include/protect.h	112;"	d
+DA_CCOR	include/protect.h	113;"	d
+DA_CR	include/protect.h	111;"	d
+DA_DPL0	include/protect.h	102;"	d
+DA_DPL1	include/protect.h	103;"	d
+DA_DPL2	include/protect.h	104;"	d
+DA_DPL3	include/protect.h	105;"	d
+DA_DR	include/protect.h	107;"	d
+DA_DRW	include/protect.h	108;"	d
+DA_DRWA	include/protect.h	109;"	d
+DA_LDT	include/protect.h	115;"	d
+DA_LIMIT_4K	include/protect.h	101;"	d
+DA_TaskGate	include/protect.h	116;"	d
+DEASSERT	kernel/lapic.c	31;"	d	file:
+DELETE	include/keyboard.h	74;"	d
+DELIVS	kernel/lapic.c	29;"	d	file:
+DESCRIPTOR	include/protect.h	/^}DESCRIPTOR;$/;"	t	typeref:struct:s_descriptor
+DEVICE	include/fs_const.h	22;"	d
+DEV_CDROM	include/fs_const.h	44;"	d
+DEV_CHAR_TTY	include/fs_const.h	46;"	d
+DEV_CLOSE	include/type.h	/^	DEV_CLOSE,$/;"	e	enum:msgtype
+DEV_FLOPPY	include/fs_const.h	43;"	d
+DEV_HD	include/fs_const.h	45;"	d
+DEV_IOCTL	include/type.h	/^	DEV_IOCTL$/;"	e	enum:msgtype
+DEV_OPEN	include/type.h	/^	DEV_OPEN = 1001,$/;"	e	enum:msgtype
+DEV_READ	include/type.h	/^	DEV_READ,$/;"	e	enum:msgtype
+DEV_SCSI	include/fs_const.h	47;"	d
+DEV_WRITE	include/type.h	/^	DEV_WRITE,$/;"	e	enum:msgtype
+DIOCTL_GET_GEO	include/fs_const.h	34;"	d
+DIR_ENTRY_SIZE	include/fs_misc.h	80;"	d
+DISP_POS_MAX	include/const.h	178;"	d
+DOWN	include/keyboard.h	80;"	d
+DRV_OF_DEV	kernel/hd.c	58;"	d	file:
+DSREG	include/proc.h	25;"	d
+DataLinBase	include/const.h	92;"	d
+DataLinLimitMAX	include/const.h	93;"	d
+Disable_Interrupts	lib/kliba.asm	/^Disable_Interrupts:$/;"	l
+DispAL	boot/loader.asm	/^DispAL:$/;"	l
+DispEchoSize	boot/loader.asm	/^DispEchoSize:$/;"	l
+DispInt	boot/loader.asm	/^DispInt:$/;"	l
+DispMemInfo	boot/loader.asm	/^DispMemInfo:$/;"	l
+DispReturn	boot/loader.asm	/^DispReturn:$/;"	l
+DispStr	boot/boot.asm	/^DispStr:$/;"	l
+DispStr	boot/loader.asm	/^DispStr:$/;"	l
+DispStrRealMode	boot/loader.asm	/^DispStrRealMode:$/;"	l
+EAXREG	include/proc.h	33;"	d
+EBPREG	include/proc.h	28;"	d
+EBXREG	include/proc.h	30;"	d
+ECXREG	include/proc.h	32;"	d
+EDIREG	include/proc.h	26;"	d
+EDXREG	include/proc.h	31;"	d
+EFLAGSREG	include/proc.h	37;"	d
+EIPREG	include/proc.h	35;"	d
+EI_NIDENT	include/elf.h	5;"	d
+ENABLE	kernel/lapic.c	24;"	d	file:
+END	include/keyboard.h	76;"	d
+ENTER	include/keyboard.h	36;"	d
+ENTRYOFFSET	Makefile	/^ENTRYOFFSET	=   0x400$/;"	m
+ENTRYPOINT	Makefile	/^ENTRYPOINT	= 0xC0030400$/;"	m
+EOI	kernel/lapic.c	22;"	d	file:
+ERROR	kernel/lapic.c	49;"	d	file:
+ESC	include/keyboard.h	34;"	d
+ESIREG	include/proc.h	27;"	d
+ESPREG	include/proc.h	38;"	d
+ESR	kernel/lapic.c	25;"	d	file:
+ESREG	include/proc.h	24;"	d
+ETHER_IRQ	include/const.h	59;"	d
+EXE_LABEL_CMP_FILENAME	boot/loader.asm	/^EXE_LABEL_CMP_FILENAME:$/;"	l
+EXE_LABEL_DIFFERENT	boot/loader.asm	/^EXE_LABEL_DIFFERENT:$/;"	l
+EXE_LABEL_FILENAME_FOUND	boot/loader.asm	/^EXE_LABEL_FILENAME_FOUND:		; 找到 echo 后便来到这里继续$/;"	l
+EXE_LABEL_FILE_LOADED	boot/loader.asm	/^EXE_LABEL_FILE_LOADED:$/;"	l
+EXE_LABEL_GOON_LOADING_FILE	boot/loader.asm	/^EXE_LABEL_GOON_LOADING_FILE:$/;"	l
+EXE_LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR	boot/loader.asm	/^EXE_LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR:$/;"	l
+EXE_LABEL_GO_ON	boot/loader.asm	/^EXE_LABEL_GO_ON:$/;"	l
+EXE_LABEL_NO_ECHO	boot/loader.asm	/^EXE_LABEL_NO_ECHO:$/;"	l
+EXE_LABEL_SEARCH_FOR_ECHO	boot/loader.asm	/^EXE_LABEL_SEARCH_FOR_ECHO:$/;"	l
+EXE_LABEL_SEARCH_IN_ROOT_DIR_BEGIN	boot/loader.asm	/^EXE_LABEL_SEARCH_IN_ROOT_DIR_BEGIN:$/;"	l
+EXE_LABEL_START	boot/loader.asm	/^EXE_LABEL_START:			; <--- 从这里开始 *************$/;"	l
+EXTERN	include/const.h	16;"	d
+EXTERN	kernel/global.c	14;"	d	file:
+EXTERN	kernel/global.c	15;"	d	file:
+EXT_PART	include/fs_const.h	81;"	d
+EchoFileName	boot/loader.asm	/^EchoFileName		db	"INIT    BIN", 0	; INIT.BIN 之文件名  ;add by liang 2016.04.20  ;edit by visual 2016.5.16$/;"	d
+Elf32_Ehdr	include/elf.h	/^}Elf32_Ehdr;$/;"	t	typeref:struct:__anon4
+Elf32_Phdr	include/elf.h	/^}Elf32_Phdr;$/;"	t	typeref:struct:__anon5
+Elf32_Shdr	include/elf.h	/^}Elf32_Shdr;$/;"	t	typeref:struct:__anon6
+Enable_Interrupts	lib/kliba.asm	/^Enable_Interrupts:$/;"	l
+End_Int_Atomic	lib/klib.c	/^PUBLIC void End_Int_Atomic(int iflag) {$/;"	f
+F1	include/keyboard.h	57;"	d
+F10	include/keyboard.h	66;"	d
+F11	include/keyboard.h	67;"	d
+F12	include/keyboard.h	68;"	d
+F2	include/keyboard.h	58;"	d
+F3	include/keyboard.h	59;"	d
+F4	include/keyboard.h	60;"	d
+F5	include/keyboard.h	61;"	d
+F6	include/keyboard.h	62;"	d
+F7	include/keyboard.h	63;"	d
+F8	include/keyboard.h	64;"	d
+F9	include/keyboard.h	65;"	d
+FALSE	include/const.h	24;"	d
+FD	include/fs_const.h	15;"	d
+FIXED	kernel/lapic.c	35;"	d	file:
+FLAGS	include/fs_const.h	17;"	d
+FLAG_ALT_L	include/keyboard.h	25;"	d
+FLAG_ALT_R	include/keyboard.h	26;"	d
+FLAG_BREAK	include/keyboard.h	19;"	d
+FLAG_CTRL_L	include/keyboard.h	23;"	d
+FLAG_CTRL_R	include/keyboard.h	24;"	d
+FLAG_EXT	include/keyboard.h	20;"	d
+FLAG_PAD	include/keyboard.h	27;"	d
+FLAG_SHIFT_L	include/keyboard.h	21;"	d
+FLAG_SHIFT_R	include/keyboard.h	22;"	d
+FLOPPY_IRQ	include/const.h	63;"	d
+FMIBuff	include/memman.h	11;"	d
+FREEINFO	include/memman.h	/^struct FREEINFO{$/;"	s
+FSREG	include/proc.h	23;"	d
+FS_H	include/fs.h	9;"	d
+FS_MISC_H	include/fs_misc.h	8;"	d
+GATE	include/protect.h	/^}GATE;$/;"	t	typeref:struct:s_gate
+GDBBIN	Makefile	/^GDBBIN = kernel.gdb.bin init\/init1.gdb.bin	#modified by mingxuan 2019-3-7$/;"	m
+GDT_PTR	include/cpu.h	/^struct GDT_PTR$/;"	s
+GDT_SIZE	include/const.h	27;"	d
+GET_TICKS	include/type.h	/^	GET_TICKS,$/;"	e	enum:msgtype
+GSREG	include/proc.h	22;"	d
+GUI_L	include/keyboard.h	39;"	d
+GUI_R	include/keyboard.h	40;"	d
+GdtLen	boot/loader.asm	/^GdtLen		equ	$ - LABEL_GDT$/;"	d
+GdtLen	kernel/entryother.asm	/^GdtLen		equ	$ - LABEL_GDT$/;"	d
+GdtPtr	boot/loader.asm	/^GdtPtr		dw	GdtLen - 1				; 段界限$/;"	d
+GdtPtr	kernel/entryother.asm	/^GdtPtr		dw	GdtLen - 1			; 段界限$/;"	d
+GetFATEntry	boot/boot.asm	/^GetFATEntry:$/;"	l
+GetFATEntry	boot/loader.asm	/^GetFATEntry:$/;"	l
+Get_Current_EFLAGS	lib/kliba.asm	/^Get_Current_EFLAGS:$/;"	l
+HARD_INT	include/type.h	/^	HARD_INT = 1,$/;"	e	enum:msgtype
+HDQueue	include/hd.h	/^} HDQueue;$/;"	t	typeref:struct:__anon1
+HD_TIMEOUT	include/hd.h	213;"	d
+HOME	include/keyboard.h	75;"	d
+HZ	include/const.h	52;"	d
+HeapLinBase	include/const.h	98;"	d
+HeapLinLimitMAX	include/const.h	99;"	d
+ICRHI	kernel/lapic.c	36;"	d	file:
+ICRLO	kernel/lapic.c	26;"	d	file:
+ID	kernel/lapic.c	19;"	d	file:
+IDLE	include/proc.h	/^enum proc_stat 			{IDLE,READY,SLEEPING,KILLED,RUNNING,WAITING};	\/\/移植进程间通信时添加 \/\/modified by mingxuan 2019-5-13$/;"	e	enum:proc_stat
+IDT_SIZE	include/const.h	28;"	d
+INDEX_CPU	include/protect.h	72;"	d
+INDEX_DUMMY	include/protect.h	67;"	d
+INDEX_FLAT_C	include/protect.h	68;"	d
+INDEX_FLAT_RW	include/protect.h	69;"	d
+INDEX_LDT_C	include/protect.h	95;"	d
+INDEX_LDT_FIRST	include/protect.h	74;"	d
+INDEX_LDT_RW	include/protect.h	96;"	d
+INDEX_TSS	include/protect.h	71;"	d
+INDEX_VIDEO	include/protect.h	70;"	d
+INIT	kernel/lapic.c	27;"	d	file:
+INIT1_LABEL_CMP_FILENAME	boot/loader.asm	/^INIT1_LABEL_CMP_FILENAME:$/;"	l
+INIT1_LABEL_DIFFERENT	boot/loader.asm	/^INIT1_LABEL_DIFFERENT:$/;"	l
+INIT1_LABEL_FILENAME_FOUND	boot/loader.asm	/^INIT1_LABEL_FILENAME_FOUND:		; 找到 echo 后便来到这里继续$/;"	l
+INIT1_LABEL_FILE_LOADED	boot/loader.asm	/^INIT1_LABEL_FILE_LOADED:$/;"	l
+INIT1_LABEL_GOON_LOADING_FILE	boot/loader.asm	/^INIT1_LABEL_GOON_LOADING_FILE:$/;"	l
+INIT1_LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR	boot/loader.asm	/^INIT1_LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR:$/;"	l
+INIT1_LABEL_GO_ON	boot/loader.asm	/^INIT1_LABEL_GO_ON:$/;"	l
+INIT1_LABEL_NO_ECHO	boot/loader.asm	/^INIT1_LABEL_NO_ECHO:$/;"	l
+INIT1_LABEL_SEARCH_FOR_ECHO	boot/loader.asm	/^INIT1_LABEL_SEARCH_FOR_ECHO:$/;"	l
+INIT1_LABEL_SEARCH_IN_ROOT_DIR_BEGIN	boot/loader.asm	/^INIT1_LABEL_SEARCH_IN_ROOT_DIR_BEGIN:$/;"	l
+INIT1_LABEL_START	boot/loader.asm	/^INIT1_LABEL_START:			; <--- 从这里开始 *************$/;"	l
+INIT2_LABEL_CMP_FILENAME	boot/loader.asm	/^INIT2_LABEL_CMP_FILENAME:$/;"	l
+INIT2_LABEL_DIFFERENT	boot/loader.asm	/^INIT2_LABEL_DIFFERENT:$/;"	l
+INIT2_LABEL_FILENAME_FOUND	boot/loader.asm	/^INIT2_LABEL_FILENAME_FOUND:		; 找到 echo 后便来到这里继续$/;"	l
+INIT2_LABEL_FILE_LOADED	boot/loader.asm	/^INIT2_LABEL_FILE_LOADED:$/;"	l
+INIT2_LABEL_GOON_LOADING_FILE	boot/loader.asm	/^INIT2_LABEL_GOON_LOADING_FILE:$/;"	l
+INIT2_LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR	boot/loader.asm	/^INIT2_LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR:$/;"	l
+INIT2_LABEL_GO_ON	boot/loader.asm	/^INIT2_LABEL_GO_ON:$/;"	l
+INIT2_LABEL_NO_ECHO	boot/loader.asm	/^INIT2_LABEL_NO_ECHO:$/;"	l
+INIT2_LABEL_SEARCH_FOR_ECHO	boot/loader.asm	/^INIT2_LABEL_SEARCH_FOR_ECHO:$/;"	l
+INIT2_LABEL_SEARCH_IN_ROOT_DIR_BEGIN	boot/loader.asm	/^INIT2_LABEL_SEARCH_IN_ROOT_DIR_BEGIN:$/;"	l
+INIT2_LABEL_START	boot/loader.asm	/^INIT2_LABEL_START:			; <--- 从这里开始 *************$/;"	l
+INIT3_LABEL_CMP_FILENAME	boot/loader.asm	/^INIT3_LABEL_CMP_FILENAME:$/;"	l
+INIT3_LABEL_DIFFERENT	boot/loader.asm	/^INIT3_LABEL_DIFFERENT:$/;"	l
+INIT3_LABEL_FILENAME_FOUND	boot/loader.asm	/^INIT3_LABEL_FILENAME_FOUND:		; 找到 echo 后便来到这里继续$/;"	l
+INIT3_LABEL_FILE_LOADED	boot/loader.asm	/^INIT3_LABEL_FILE_LOADED:$/;"	l
+INIT3_LABEL_GOON_LOADING_FILE	boot/loader.asm	/^INIT3_LABEL_GOON_LOADING_FILE:$/;"	l
+INIT3_LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR	boot/loader.asm	/^INIT3_LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR:$/;"	l
+INIT3_LABEL_GO_ON	boot/loader.asm	/^INIT3_LABEL_GO_ON:$/;"	l
+INIT3_LABEL_NO_ECHO	boot/loader.asm	/^INIT3_LABEL_NO_ECHO:$/;"	l
+INIT3_LABEL_SEARCH_FOR_ECHO	boot/loader.asm	/^INIT3_LABEL_SEARCH_FOR_ECHO:$/;"	l
+INIT3_LABEL_SEARCH_IN_ROOT_DIR_BEGIN	boot/loader.asm	/^INIT3_LABEL_SEARCH_IN_ROOT_DIR_BEGIN:$/;"	l
+INIT3_LABEL_START	boot/loader.asm	/^INIT3_LABEL_START:			; <--- 从这里开始 *************$/;"	l
+INITIAL1_PID	include/proc.h	78;"	d
+INITIAL2_PID	include/proc.h	79;"	d
+INITIAL3_PID	include/proc.h	80;"	d
+INITIAL_PID	include/proc.h	77;"	d
+INIT_STACK_SIZE	include/proc.h	19;"	d
+INODE_SIZE	include/fs_misc.h	70;"	d
+INSERT	include/keyboard.h	73;"	d
+INT_ACTIVELOW	kernel/ioapic.c	26;"	d	file:
+INT_DISABLED	kernel/ioapic.c	24;"	d	file:
+INT_LEVEL	kernel/ioapic.c	25;"	d	file:
+INT_LOGICAL	kernel/ioapic.c	27;"	d	file:
+INT_M_CTL	include/const.h	40;"	d
+INT_M_CTLMASK	include/const.h	41;"	d
+INT_S_CTL	include/const.h	42;"	d
+INT_S_CTLMASK	include/const.h	43;"	d
+INT_VECTOR_BOUNDS	include/protect.h	140;"	d
+INT_VECTOR_BREAKPOINT	include/protect.h	138;"	d
+INT_VECTOR_COPROC_ERR	include/protect.h	150;"	d
+INT_VECTOR_COPROC_NOT	include/protect.h	142;"	d
+INT_VECTOR_COPROC_SEG	include/protect.h	144;"	d
+INT_VECTOR_DEBUG	include/protect.h	136;"	d
+INT_VECTOR_DIVIDE	include/protect.h	135;"	d
+INT_VECTOR_DOUBLE_FAULT	include/protect.h	143;"	d
+INT_VECTOR_INVAL_OP	include/protect.h	141;"	d
+INT_VECTOR_INVAL_TSS	include/protect.h	145;"	d
+INT_VECTOR_IRQ0	include/protect.h	153;"	d
+INT_VECTOR_IRQ8	include/protect.h	154;"	d
+INT_VECTOR_NMI	include/protect.h	137;"	d
+INT_VECTOR_OVERFLOW	include/protect.h	139;"	d
+INT_VECTOR_PAGE_FAULT	include/protect.h	149;"	d
+INT_VECTOR_PROTECTION	include/protect.h	148;"	d
+INT_VECTOR_SEG_NOT	include/protect.h	146;"	d
+INT_VECTOR_STACK_FAULT	include/protect.h	147;"	d
+INT_VECTOR_SYS_CALL	include/protect.h	157;"	d
+INT_VECTOR_SYS_CALL	kernel/syscall.asm	/^INT_VECTOR_SYS_CALL equ 0x90$/;"	d
+INVALID_INODE	include/fs_const.h	56;"	d
+IOAPIC	kernel/ioapic.c	13;"	d	file:
+IO_CLOCK_IRQ	include/const.h	69;"	d
+IO_HD_IRQ	include/const.h	71;"	d
+IO_KEYBOARD_IRQ	include/const.h	70;"	d
+IPC_NOWAIT	include/const.h	164;"	d
+IPC_NOWAIT	include/stdio.h	46;"	d
+IPC_RMID	include/const.h	167;"	d
+IPC_RMID	include/stdio.h	49;"	d
+IPC_WAIT	include/const.h	165;"	d
+IPC_WAIT	include/stdio.h	47;"	d
+IRQ_COM1	kernel/lapic.c	61;"	d	file:
+IRQ_ERROR	kernel/lapic.c	63;"	d	file:
+IRQ_IDE	kernel/lapic.c	62;"	d	file:
+IRQ_KBD	kernel/lapic.c	60;"	d	file:
+IRQ_SPURIOUS	kernel/lapic.c	64;"	d	file:
+IRQ_TIMER	kernel/lapic.c	59;"	d	file:
+I_BLOCK_SPECIAL	include/fs_const.h	93;"	d
+I_CHAR_SPECIAL	include/fs_const.h	95;"	d
+I_DIRECTORY	include/fs_const.h	94;"	d
+I_NAMED_PIPE	include/fs_const.h	96;"	d
+I_REGULAR	include/fs_const.h	92;"	d
+I_TYPE_MASK	include/fs_const.h	91;"	d
+Init1FileName	boot/loader.asm	/^Init1FileName		db	"INIT1   BIN", 0	; INIT1.BIN 之文件名 ;added by mingxuan 2019-3-7$/;"	d
+Init2FileName	boot/loader.asm	/^Init2FileName		db	"INIT2   BIN", 0	; INIT2.BIN 之文件名 ;added by mingxuan 2019-3-14$/;"	d
+Init3FileName	boot/loader.asm	/^Init3FileName		db	"INIT3   BIN", 0	; INIT3.BIN 之文件名 ;added by mingxuan 2019-3-14$/;"	d
+InitKernel	boot/loader.asm	/^InitKernel:	; 遍历每一个 Program Header，根据 Program Header 中的信息来确定把什么放进内存，放到什么位置，以及放多少。$/;"	l
+Interrupts_Enabled	lib/klib.c	/^PRIVATE int Interrupts_Enabled() {$/;"	f
+KB_CMD	include/const.h	145;"	d
+KB_DATA	include/const.h	142;"	d
+KB_INPUT	include/keyboard.h	/^}KB_INPUT;$/;"	t	typeref:struct:s_kb
+KB_IN_BYTES	include/keyboard.h	15;"	d
+KERNELESPREG	include/proc.h	29;"	d
+KEYBOARD_IRQ	include/const.h	57;"	d
+KILLED	include/proc.h	/^enum proc_stat 			{IDLE,READY,SLEEPING,KILLED,RUNNING,WAITING};	\/\/移植进程间通信时添加 \/\/modified by mingxuan 2019-5-13$/;"	e	enum:proc_stat
+KWALL	include/memman.h	12;"	d
+K_LIN2PHY	include/const.h	85;"	d
+K_PHY2LIN	include/const.h	84;"	d
+KernelFileName	boot/loader.asm	/^KernelFileName		db	"KERNEL  BIN", 0	; KERNEL.BIN 之文件名$/;"	d
+KernelLinBase	include/const.h	104;"	d
+KernelLinLimitMAX	include/const.h	105;"	d
+KernelPageTblAddr	include/const.h	81;"	d
+KernelSize	include/const.h	83;"	d
+KernelStackSpace	kernel/kernel.asm	/^KernelStackSpace	resb	2 * 1024$/;"	l
+KernelStackTop	kernel/kernel.asm	/^KernelStackTop:	; used as stack of kernel itself$/;"	l
+KillMotor	boot/loader.asm	/^KillMotor:$/;"	l
+LABEL_CMP_FILENAME	boot/boot.asm	/^LABEL_CMP_FILENAME:$/;"	l
+LABEL_CMP_FILENAME	boot/loader.asm	/^LABEL_CMP_FILENAME:$/;"	l
+LABEL_DATA	boot/loader.asm	/^LABEL_DATA:$/;"	l
+LABEL_DESC_FLAT_C	boot/loader.asm	/^LABEL_DESC_FLAT_C:		Descriptor             0,              0fffffh, DA_CR  | DA_32 | DA_LIMIT_4K			; 0 ~ 4G$/;"	l
+LABEL_DESC_FLAT_C	kernel/entryother.asm	/^LABEL_DESC_FLAT_C:		Descriptor             0,         0fffffh, DA_CR  | DA_32 | DA_LIMIT_4K	; 0 ~ 4G$/;"	l
+LABEL_DESC_FLAT_RW	boot/loader.asm	/^LABEL_DESC_FLAT_RW:		Descriptor             0,              0fffffh, DA_DRW | DA_32 | DA_LIMIT_4K			; 0 ~ 4G$/;"	l
+LABEL_DESC_FLAT_RW	kernel/entryother.asm	/^LABEL_DESC_FLAT_RW:		Descriptor             0,      	  0fffffh, DA_DRW | DA_32 | DA_LIMIT_4K	; 0 ~ 4G$/;"	l
+LABEL_DESC_VIDEO	boot/loader.asm	/^LABEL_DESC_VIDEO:		Descriptor		 0B8000h,               0ffffh, DA_DRW | DA_DPL3	; 显存首地址$/;"	l
+LABEL_DESC_VIDEO	kernel/entryother.asm	/^LABEL_DESC_VIDEO:		Descriptor	 	 0B8000h,          0ffffh, DA_DRW						; 显存首地址$/;"	l
+LABEL_DIFFERENT	boot/boot.asm	/^LABEL_DIFFERENT:$/;"	l
+LABEL_DIFFERENT	boot/loader.asm	/^LABEL_DIFFERENT:$/;"	l
+LABEL_EVEN_2	boot/boot.asm	/^LABEL_EVEN_2:$/;"	l
+LABEL_EVEN_2	boot/loader.asm	/^LABEL_EVEN_2:$/;"	l
+LABEL_FILENAME_FOUND	boot/boot.asm	/^LABEL_FILENAME_FOUND:			; 找到 LOADER.BIN 后便来到这里继续$/;"	l
+LABEL_FILENAME_FOUND	boot/loader.asm	/^LABEL_FILENAME_FOUND:			; 找到 KERNEL.BIN 后便来到这里继续$/;"	l
+LABEL_FILE_LOADED	boot/boot.asm	/^LABEL_FILE_LOADED:$/;"	l
+LABEL_FILE_LOADED	boot/loader.asm	/^LABEL_FILE_LOADED:$/;"	l
+LABEL_GDT	boot/loader.asm	/^LABEL_GDT:				Descriptor             0,                    0, 0						; 空描述符$/;"	l
+LABEL_GDT	kernel/entryother.asm	/^LABEL_GDT:				Descriptor             0,               0, 0							; 空描述符$/;"	l
+LABEL_GET_FAT_ENRY_OK	boot/boot.asm	/^LABEL_GET_FAT_ENRY_OK:$/;"	l
+LABEL_GET_FAT_ENRY_OK	boot/loader.asm	/^LABEL_GET_FAT_ENRY_OK:$/;"	l
+LABEL_GOON_LOADING_FILE	boot/boot.asm	/^LABEL_GOON_LOADING_FILE:$/;"	l
+LABEL_GOON_LOADING_FILE	boot/loader.asm	/^LABEL_GOON_LOADING_FILE:$/;"	l
+LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR	boot/boot.asm	/^LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR:$/;"	l
+LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR	boot/loader.asm	/^LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR:$/;"	l
+LABEL_GO_ON	boot/boot.asm	/^LABEL_GO_ON:$/;"	l
+LABEL_GO_ON	boot/loader.asm	/^LABEL_GO_ON:$/;"	l
+LABEL_NO_KERNELBIN	boot/loader.asm	/^LABEL_NO_KERNELBIN:$/;"	l
+LABEL_NO_LOADERBIN	boot/boot.asm	/^LABEL_NO_LOADERBIN:$/;"	l
+LABEL_PM_START	boot/loader.asm	/^LABEL_PM_START:$/;"	l
+LABEL_SEARCH_FOR_KERNELBIN	boot/loader.asm	/^LABEL_SEARCH_FOR_KERNELBIN:$/;"	l
+LABEL_SEARCH_FOR_LOADERBIN	boot/boot.asm	/^LABEL_SEARCH_FOR_LOADERBIN:$/;"	l
+LABEL_SEARCH_IN_ROOT_DIR_BEGIN	boot/boot.asm	/^LABEL_SEARCH_IN_ROOT_DIR_BEGIN:$/;"	l
+LABEL_SEARCH_IN_ROOT_DIR_BEGIN	boot/loader.asm	/^LABEL_SEARCH_IN_ROOT_DIR_BEGIN:$/;"	l
+LABEL_SEG_CODE32	kernel/entryother.asm	/^LABEL_SEG_CODE32:$/;"	l
+LABEL_START	boot/boot.asm	/^LABEL_START:	$/;"	l
+LABEL_START	boot/loader.asm	/^LABEL_START:			; <--- 从这里开始 *************$/;"	l
+LD	Makefile	/^LD		= ld$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS		= -s -Ttext $(ENTRYPOINT) -m elf_i386 # added by mingxuan 2018-12-11$/;"	m
+LDFLAGS_init	Makefile	/^LDFLAGS_init	= -m elf_i386 -s -Map init\/init.map$/;"	m
+LDFLAGS_init1	Makefile	/^LDFLAGS_init1	= -m elf_i386 -s -Map init\/init1.map	#added by mingxuan 2019-3-7$/;"	m
+LDFLAGS_init1_gdb	Makefile	/^LDFLAGS_init1_gdb	= -m elf_i386	#added by mingxuan 2019-3-7	$/;"	m
+LDFLAGS_init2	Makefile	/^LDFLAGS_init2	= -m elf_i386 -s -Map init\/init2.map	#added by mingxuan 2019-3-14$/;"	m
+LDFLAGS_init2_gdb	Makefile	/^LDFLAGS_init2_gdb	= -m elf_i386	#added by mingxuan 2019-3-14	$/;"	m
+LDFLAGS_init3	Makefile	/^LDFLAGS_init3	= -m elf_i386 -s -Map init\/init3.map	#added by mingxuan 2019-3-14$/;"	m
+LDFLAGS_init3_gdb	Makefile	/^LDFLAGS_init3_gdb	= -m elf_i386	#added by mingxuan 2019-3-14$/;"	m
+LDFLAGS_init_gdb	Makefile	/^LDFLAGS_init_gdb	= -m elf_i386$/;"	m
+LDFLAGS_kernel	Makefile	/^LDFLAGS_kernel	= -m elf_i386 -s -Ttext $(ENTRYPOINT) -Map misc\/kernel.map$/;"	m
+LDFLAGS_kernel_gdb	Makefile	/^LDFLAGS_kernel_gdb	= -m elf_i386 -Ttext $(ENTRYPOINT)$/;"	m
+LDT_SIZE	include/protect.h	92;"	d
+LEFT	include/keyboard.h	81;"	d
+LEVEL	kernel/lapic.c	32;"	d	file:
+LINT0	kernel/lapic.c	47;"	d	file:
+LINT1	kernel/lapic.c	48;"	d	file:
+LIN_MEMMAP	include/proc.h	/^}LIN_MEMMAP;$/;"	t	typeref:struct:s_lin_memmap
+LSEEK	include/type.h	/^	OPEN, CLOSE, READ, WRITE, LSEEK, STAT, UNLINK,$/;"	e	enum:msgtype
+LoadMessage	boot/loader.asm	/^LoadMessage:		db	"Loading  "$/;"	d
+LoaderFileName	boot/boot.asm	/^LoaderFileName		db	"LOADER  BIN", 0	; LOADER.BIN 之文件名$/;"	d
+MAGIC_V1	include/fs_misc.h	19;"	d
+MAJOR	include/fs_const.h	52;"	d
+MAJOR_SHIFT	include/fs_const.h	49;"	d
+MAKE_DEV	include/fs_const.h	50;"	d
+MAKE_DEVICE_REG	include/hd.h	220;"	d
+MAP_COLS	include/keyboard.h	16;"	d
+MASKED	kernel/lapic.c	50;"	d	file:
+MASK_RAW	include/keyboard.h	29;"	d
+MAX_DRIVES	include/fs_const.h	60;"	d
+MAX_FILENAME_LEN	include/fs.h	19;"	d
+MAX_FILENAME_LEN	include/stdio.h	21;"	d
+MAX_INT	include/const.h	13;"	d
+MAX_PATH	include/fs.h	18;"	d
+MAX_PATH	include/stdio.h	22;"	d
+MAX_PRIM	include/fs_const.h	65;"	d
+MAX_SUBPARTITIONS	include/fs_const.h	66;"	d
+MAX_UNSIGNED_INT	include/const.h	12;"	d
+MEMEND	include/memman.h	16;"	d
+MEMMAN	include/memman.h	/^struct MEMMAN{$/;"	s
+MEMMAN_ADDR	include/memman.h	10;"	d
+MEMMAN_FREES	include/memman.h	9;"	d
+MEMSTART	include/memman.h	15;"	d
+MESSAGE	include/type.h	/^} MESSAGE;$/;"	t	typeref:struct:__anon2
+MIGRATION1_PID	include/proc.h	88;"	d
+MIGRATION2_PID	include/proc.h	89;"	d
+MIGRATION3_PID	include/proc.h	90;"	d
+MIGRATION_PID	include/proc.h	87;"	d
+MINOR	include/fs_const.h	53;"	d
+MINOR_BOOT	include/fs_const.h	71;"	d
+MINOR_hd1a	include/fs_const.h	69;"	d
+MINOR_hd2a	include/fs_const.h	70;"	d
+MPBOOT	include/mp.h	36;"	d
+MPBUS	include/mp.h	52;"	d
+MPIOAPIC	include/mp.h	53;"	d
+MPIOINTR	include/mp.h	54;"	d
+MPLINTR	include/mp.h	55;"	d
+MPPROC	include/mp.h	51;"	d
+MSGMAX	include/const.h	170;"	d
+MSGMNB	include/const.h	169;"	d
+MSGMNI	include/const.h	171;"	d
+MSG_QUEUE	include/msgqueue.h	/^}MSG_QUEUE, *MSG_QUEUE_PTR;$/;"	t	typeref:struct:msg_queue
+MSG_QUEUE_MANAGE	include/msgqueue.h	/^}MSG_QUEUE_MANAGE, *MSG_QUEUE_MANAGE_PTR;$/;"	t	typeref:struct:msg_queue_manage
+MSG_QUEUE_MANAGE_PTR	include/msgqueue.h	/^}MSG_QUEUE_MANAGE, *MSG_QUEUE_MANAGE_PTR;$/;"	t	typeref:struct:msg_queue_manage
+MSG_QUEUE_NODE	include/msgqueue.h	/^}MSG_QUEUE_NODE, *MSG_QUEUE_NODE_PTR;$/;"	t	typeref:struct:msg_queue_node
+MSG_QUEUE_NODE_PTR	include/msgqueue.h	/^}MSG_QUEUE_NODE, *MSG_QUEUE_NODE_PTR;$/;"	t	typeref:struct:msg_queue_node
+MSG_QUEUE_PTR	include/msgqueue.h	/^}MSG_QUEUE, *MSG_QUEUE_PTR;$/;"	t	typeref:struct:msg_queue
+MemChkBuf	boot/loader.asm	/^MemChkBuf		equ	BaseOfLoaderPhyAddr + _MemChkBuf$/;"	d
+MemCpy	boot/loader.asm	/^MemCpy:$/;"	l
+MemInfo	kernel/memman.c	/^u32 MemInfo[256] = {0};			\/\/存放FMIBuff后1k内容$/;"	v
+Message1	boot/boot.asm	/^Message1		db	"Ready.   "; 9字节, 不够则用空格补齐. 序号 1$/;"	d
+Message1	boot/loader.asm	/^Message1		db	"Ready.   "$/;"	d
+Message2	boot/boot.asm	/^Message2		db	"No LOADER"; 9字节, 不够则用空格补齐. 序号 2$/;"	d
+Message2	boot/loader.asm	/^Message2		db	"No KERNEL"$/;"	d
+Message3	boot/loader.asm	/^Message3		db	"exLoading"		;add by liang 2016.04.20$/;"	d
+Message4	boot/loader.asm	/^Message4		db	"exReady. "		;add by liang 2016.04.20$/;"	d
+Message5	boot/loader.asm	/^Message5		db	"No ECHO  "		;add by liang 2016.04.20$/;"	d
+MessageLength	boot/boot.asm	/^MessageLength		equ	9$/;"	d
+MessageLength	boot/loader.asm	/^MessageLength		equ	9$/;"	d
+NAME_LEN	include/fs_const.h	18;"	d
+NCPU	include/const.h	133;"	d
+NO_DEV	include/fs_const.h	42;"	d
+NO_PART	include/fs_const.h	80;"	d
+NR_CHILD_MAX	include/proc.h	113;"	d
+NR_CONSOLES	include/fs_const.h	8;"	d
+NR_DEFAULT_FILE_SECTS	include/fs_const.h	101;"	d
+NR_FILES	include/proc.h	98;"	d
+NR_FILE_DESC	include/fs_const.h	86;"	d
+NR_INITIALS	include/proc.h	68;"	d
+NR_INODE	include/fs_const.h	87;"	d
+NR_IRQ	include/const.h	55;"	d
+NR_MIGRATIONS	include/proc.h	85;"	d
+NR_PART_PER_DRIVE	include/fs_const.h	61;"	d
+NR_PCBS	include/proc.h	56;"	d
+NR_PRIM_PER_DRIVE	include/fs_const.h	64;"	d
+NR_SCAN_CODES	include/keyboard.h	17;"	d
+NR_STABLE_PROC	include/proc.h	92;"	d
+NR_SUB_PER_DRIVE	include/fs_const.h	63;"	d
+NR_SUB_PER_PART	include/fs_const.h	62;"	d
+NR_SUPER_BLOCK	include/fs_const.h	88;"	d
+NR_SYS_CALL	include/const.h	77;"	d
+NR_TASKS	include/proc.h	59;"	d
+NULL	include/type.h	88;"	d
+NUM_LOCK	include/keyboard.h	53;"	d
+OBJS	Makefile	/^OBJS		= kernel\/kernel.o kernel\/syscall.o kernel\/start.o kernel\/main.o kernel\/clock.o\\$/;"	m
+OBJSINIT	Makefile	/^OBJSINIT	= init\/init.o init\/initstart.o lib\/ulib.a $/;"	m
+OBJSINIT1	Makefile	/^OBJSINIT1	= init\/init1.o init\/initstart1.o lib\/ulib.a	#added by mingxuan 2019-3-7$/;"	m
+OBJSINIT2	Makefile	/^OBJSINIT2	= init\/init2.o init\/initstart2.o lib\/ulib.a	#added by mingxuan 2019-3-14$/;"	m
+OBJSINIT3	Makefile	/^OBJSINIT3	= init\/init3.o init\/initstart3.o lib\/ulib.a	#added by mingxuan 2019-3-14$/;"	m
+OBJSULIB	Makefile	/^OBJSULIB 	= lib\/string.o kernel\/syscall.o$/;"	m
+OFFSET	include/fs_const.h	25;"	d
+ONE_SHOT	kernel/lapic.c	44;"	d	file:
+OPEN	include/type.h	/^	OPEN, CLOSE, READ, WRITE, LSEEK, STAT, UNLINK,$/;"	e	enum:msgtype
+ORANGESBOOT	Makefile	/^ORANGESBOOT	= boot\/boot.bin boot\/loader.bin$/;"	m
+ORANGESINIT	Makefile	/^ORANGESINIT	= init\/init.bin$/;"	m
+ORANGESINIT1	Makefile	/^ORANGESINIT1= init\/init1.bin	#added by mingxuan 2019-3-7$/;"	m
+ORANGESINIT2	Makefile	/^ORANGESINIT2= init\/init2.bin	#added by mingxuan 2019-3-14$/;"	m
+ORANGESINIT3	Makefile	/^ORANGESINIT3= init\/init3.bin	#added by mingxuan 2019-3-14$/;"	m
+ORANGESKERNEL	Makefile	/^ORANGESKERNEL	= kernel.bin$/;"	m
+ORANGES_PART	include/fs_const.h	79;"	d
+O_CREAT	include/fs.h	12;"	d
+O_CREAT	include/stdio.h	23;"	d
+O_RDWR	include/fs.h	13;"	d
+O_RDWR	include/stdio.h	24;"	d
+PAD_0	include/keyboard.h	96;"	d
+PAD_1	include/keyboard.h	97;"	d
+PAD_2	include/keyboard.h	98;"	d
+PAD_3	include/keyboard.h	99;"	d
+PAD_4	include/keyboard.h	100;"	d
+PAD_5	include/keyboard.h	101;"	d
+PAD_6	include/keyboard.h	102;"	d
+PAD_7	include/keyboard.h	103;"	d
+PAD_8	include/keyboard.h	104;"	d
+PAD_9	include/keyboard.h	105;"	d
+PAD_DEL	include/keyboard.h	116;"	d
+PAD_DOT	include/keyboard.h	95;"	d
+PAD_DOWN	include/keyboard.h	107;"	d
+PAD_END	include/keyboard.h	111;"	d
+PAD_ENTER	include/keyboard.h	94;"	d
+PAD_HOME	include/keyboard.h	110;"	d
+PAD_INS	include/keyboard.h	114;"	d
+PAD_LEFT	include/keyboard.h	108;"	d
+PAD_MID	include/keyboard.h	115;"	d
+PAD_MINUS	include/keyboard.h	92;"	d
+PAD_PAGEDOWN	include/keyboard.h	113;"	d
+PAD_PAGEUP	include/keyboard.h	112;"	d
+PAD_PLUS	include/keyboard.h	93;"	d
+PAD_RIGHT	include/keyboard.h	109;"	d
+PAD_SLASH	include/keyboard.h	90;"	d
+PAD_STAR	include/keyboard.h	91;"	d
+PAD_UP	include/keyboard.h	106;"	d
+PAGEDOWN	include/keyboard.h	78;"	d
+PAGEUP	include/keyboard.h	77;"	d
+PARTITION_ENTRY	include/hd.h	/^} PARTITION_ENTRY;$/;"	v	typeref:struct:part_ent
+PARTITION_TABLE_OFFSET	include/hd.h	214;"	d
+PATHNAME	include/fs_const.h	16;"	d
+PAUSEBREAK	include/keyboard.h	72;"	d
+PCINT	kernel/lapic.c	46;"	d	file:
+PERIODIC	kernel/lapic.c	43;"	d	file:
+PG_A	include/const.h	126;"	d
+PG_P	include/const.h	120;"	d
+PG_PS	include/const.h	129;"	d
+PG_RWR	include/const.h	121;"	d
+PG_RWW	include/const.h	122;"	d
+PG_USS	include/const.h	123;"	d
+PG_USU	include/const.h	124;"	d
+POSITION	include/fs_const.h	23;"	d
+POWER	include/keyboard.h	85;"	d
+PRINTER_IRQ	include/const.h	64;"	d
+PRINTSCREEN	include/keyboard.h	71;"	d
+PRIVATE	include/const.h	20;"	d
+PRIVILEGE_KRNL	include/const.h	31;"	d
+PRIVILEGE_TASK	include/const.h	32;"	d
+PRIVILEGE_USER	include/const.h	33;"	d
+PROCESS	include/proc.h	/^}PROCESS;$/;"	t	typeref:union:task_union
+PROCESS_0	include/proc.h	/^}PROCESS_0;$/;"	t	typeref:struct:s_proc
+PROC_NR	include/fs_const.h	21;"	d
+PUBLIC	include/const.h	19;"	d
+P_EXTENDED	include/fs_const.h	76;"	d
+P_PRIMARY	include/fs_const.h	75;"	d
+P_QUEUE_NODE	include/box.h	/^}P_QUEUE_NODE, *P_QUEUE_NODE_PTR;$/;"	t	typeref:struct:p_queue_node
+P_QUEUE_NODE	include/msgqueue.h	/^}P_QUEUE_NODE, *P_QUEUE_NODE_PTR;$/;"	t	typeref:struct:p_queue_node
+P_QUEUE_NODE_PTR	include/box.h	/^}P_QUEUE_NODE, *P_QUEUE_NODE_PTR;$/;"	t	typeref:struct:p_queue_node
+P_QUEUE_NODE_PTR	include/msgqueue.h	/^}P_QUEUE_NODE, *P_QUEUE_NODE_PTR;$/;"	t	typeref:struct:p_queue_node
+P_STACKBASE	include/proc.h	21;"	d
+P_STACKTOP	include/proc.h	40;"	d
+PageTblNumAddr	include/const.h	80;"	d
+RATE_GENERATOR	include/const.h	48;"	d
+RD_SECT	include/fs_misc.h	94;"	d
+RD_SECT_SCHED	include/fs_misc.h	110;"	d
+READ	include/type.h	/^	OPEN, CLOSE, READ, WRITE, LSEEK, STAT, UNLINK,$/;"	e	enum:msgtype
+READY	include/proc.h	/^enum proc_stat 			{IDLE,READY,SLEEPING,KILLED,RUNNING,WAITING};	\/\/移植进程间通信时添加 \/\/modified by mingxuan 2019-5-13$/;"	e	enum:proc_stat
+REG_ALT_STATUS	include/hd.h	174;"	d
+REG_CMD	include/hd.h	130;"	d
+REG_DATA	include/hd.h	59;"	d
+REG_DEVICE	include/hd.h	88;"	d
+REG_DEV_CTRL	include/hd.h	154;"	d
+REG_DRV_ADDR	include/hd.h	179;"	d
+REG_ERROR	include/hd.h	62;"	d
+REG_FEATURES	include/hd.h	60;"	d
+REG_ID	kernel/ioapic.c	15;"	d	file:
+REG_LBA_HIGH	include/hd.h	86;"	d
+REG_LBA_LOW	include/hd.h	84;"	d
+REG_LBA_MID	include/hd.h	85;"	d
+REG_NSECTOR	include/hd.h	82;"	d
+REG_STATUS	include/hd.h	105;"	d
+REG_TABLE	kernel/ioapic.c	17;"	d	file:
+REG_VER	kernel/ioapic.c	16;"	d	file:
+REQUEST	include/fs_const.h	20;"	d
+RETADR	include/proc.h	34;"	d
+RETVAL	include/fs_const.h	30;"	d
+RIGHT	include/keyboard.h	82;"	d
+ROOT_DEV	include/fs_const.h	72;"	d
+ROOT_INODE	include/fs_const.h	57;"	d
+RPL_KRNL	include/const.h	35;"	d
+RPL_TASK	include/const.h	36;"	d
+RPL_USER	include/const.h	37;"	d
+RS232_IRQ	include/const.h	61;"	d
+RUNNING	include/proc.h	/^enum proc_stat 			{IDLE,READY,SLEEPING,KILLED,RUNNING,WAITING};	\/\/移植进程间通信时添加 \/\/modified by mingxuan 2019-5-13$/;"	e	enum:proc_stat
+RWInfo	include/hd.h	/^} RWInfo;	\/\/进程硬盘读写请求$/;"	t	typeref:struct:rdwt_info
+RW_LOCK_DEFAULT	include/rwlock.h	19;"	d
+ReadSector	boot/boot.asm	/^ReadSector:$/;"	l
+ReadSector	boot/loader.asm	/^ReadSector:$/;"	l
+SA_RPL0	include/protect.h	125;"	d
+SA_RPL1	include/protect.h	126;"	d
+SA_RPL2	include/protect.h	127;"	d
+SA_RPL3	include/protect.h	128;"	d
+SA_RPL_MASK	include/protect.h	124;"	d
+SA_TIG	include/protect.h	131;"	d
+SA_TIL	include/protect.h	132;"	d
+SA_TI_MASK	include/protect.h	130;"	d
+SCROLL_LOCK	include/keyboard.h	54;"	d
+SECONDARY_IRQ	include/const.h	60;"	d
+SECTOR_BITS	include/fs_const.h	38;"	d
+SECTOR_SIZE	include/fs_const.h	37;"	d
+SECTOR_SIZE_SHIFT	include/fs_const.h	39;"	d
+SEEK_CUR	include/fs.h	15;"	d
+SEEK_CUR	include/stdio.h	26;"	d
+SEEK_END	include/fs.h	16;"	d
+SEEK_END	include/stdio.h	27;"	d
+SEEK_SET	include/fs.h	14;"	d
+SEEK_SET	include/stdio.h	25;"	d
+SELECTOR_CPU	include/protect.h	81;"	d
+SELECTOR_DUMMY	include/protect.h	76;"	d
+SELECTOR_FLAT_C	include/protect.h	77;"	d
+SELECTOR_FLAT_RW	include/protect.h	78;"	d
+SELECTOR_KERNEL_CS	include/protect.h	85;"	d
+SELECTOR_KERNEL_DS	include/protect.h	86;"	d
+SELECTOR_KERNEL_FS	include/protect.h	88;"	d
+SELECTOR_KERNEL_GS	include/protect.h	87;"	d
+SELECTOR_LDT_FIRST	include/protect.h	83;"	d
+SELECTOR_TSS	include/protect.h	80;"	d
+SELECTOR_VIDEO	include/protect.h	79;"	d
+SHIFT_L	include/keyboard.h	44;"	d
+SHIFT_R	include/keyboard.h	45;"	d
+SLEEP	include/keyboard.h	86;"	d
+SLEEPING	include/proc.h	/^enum proc_stat 			{IDLE,READY,SLEEPING,KILLED,RUNNING,WAITING};	\/\/移植进程间通信时添加 \/\/modified by mingxuan 2019-5-13$/;"	e	enum:proc_stat
+SSREG	include/proc.h	39;"	d
+STACK_FRAME	include/proc.h	/^}STACK_FRAME;$/;"	t	typeref:struct:s_stackframe
+STACK_SIZE_TASK	include/proc.h	242;"	d
+STACK_SIZE_TTY	include/proc.h	243;"	d
+STARTUP	kernel/lapic.c	28;"	d	file:
+START_ADDR_H	include/const.h	154;"	d
+START_ADDR_L	include/const.h	155;"	d
+STAT	include/type.h	/^	OPEN, CLOSE, READ, WRITE, LSEEK, STAT, UNLINK,$/;"	e	enum:msgtype
+STATUS_BSY	include/hd.h	121;"	d
+STATUS_CORR	include/hd.h	126;"	d
+STATUS_DFSE	include/hd.h	123;"	d
+STATUS_DRDY	include/hd.h	122;"	d
+STATUS_DRQ	include/hd.h	125;"	d
+STATUS_DSC	include/hd.h	124;"	d
+STATUS_ERR	include/hd.h	128;"	d
+STATUS_IDX	include/hd.h	127;"	d
+SUPER_BLOCK_SIZE	include/fs_misc.h	51;"	d
+SVR	kernel/lapic.c	23;"	d	file:
+SelectorFlatC	boot/loader.asm	/^SelectorFlatC		equ	LABEL_DESC_FLAT_C	- LABEL_GDT$/;"	d
+SelectorFlatC	kernel/entryother.asm	/^SelectorFlatC		equ	LABEL_DESC_FLAT_C	- LABEL_GDT$/;"	d
+SelectorFlatRW	boot/loader.asm	/^SelectorFlatRW		equ	LABEL_DESC_FLAT_RW	- LABEL_GDT$/;"	d
+SelectorFlatRW	kernel/entryother.asm	/^SelectorFlatRW		equ	LABEL_DESC_FLAT_RW	- LABEL_GDT$/;"	d
+SelectorVideo	boot/loader.asm	/^SelectorVideo		equ	LABEL_DESC_VIDEO	- LABEL_GDT + SA_RPL3$/;"	d
+SelectorVideo	kernel/entryother.asm	/^SelectorVideo		equ	LABEL_DESC_VIDEO	- LABEL_GDT$/;"	d
+SetupPaging	boot/loader.asm	/^SetupPaging:$/;"	l
+SharePageBase	include/const.h	96;"	d
+SharePageLimit	include/const.h	97;"	d
+StackLinBase	include/const.h	101;"	d
+StackLinLimitMAX	include/const.h	100;"	d
+StackSpace	boot/loader.asm	/^StackSpace:	times	1000h	db	0$/;"	l
+StackSpace	kernel/kernel.asm	/^StackSpace		resb	2 * 1024$/;"	l
+StackTop	kernel/kernel.asm	/^StackTop:		; used only as irq-stack in minios. added by xw$/;"	l
+TAB	include/keyboard.h	35;"	d
+TASK	include/proc.h	/^}TASK;$/;"	t	typeref:struct:s_task
+TASK_FLAG	include/proc.h	250;"	d
+TCCR	kernel/lapic.c	54;"	d	file:
+TDCR	kernel/lapic.c	55;"	d	file:
+TEST	include/memman.h	17;"	d
+TICR	kernel/lapic.c	53;"	d	file:
+TIMER	kernel/lapic.c	39;"	d	file:
+TIMER0	include/const.h	46;"	d
+TIMER_FREQ	include/const.h	51;"	d
+TIMER_MODE	include/const.h	47;"	d
+TPR	kernel/lapic.c	21;"	d	file:
+TREE_INFO	include/proc.h	/^}TREE_INFO;$/;"	t	typeref:struct:s_tree_info
+TRUE	include/const.h	23;"	d
+TSS	include/protect.h	/^}TSS;$/;"	t	typeref:struct:s_tss
+TYPE_PROCESS	include/proc.h	114;"	d
+TYPE_THREAD	include/proc.h	115;"	d
+T_IRQ0	kernel/ioapic.c	29;"	d	file:
+T_IRQ0	kernel/lapic.c	57;"	d	file:
+Task	kernel/ktest.c	/^void Task()$/;"	f
+TestA	kernel/ktest.c	/^void TestA()$/;"	f
+TestB	kernel/ktest.c	/^void TestB()$/;"	f
+TextLinBase	include/const.h	90;"	d
+TextLinLimitMAX	include/const.h	91;"	d
+TopOfStack	boot/loader.asm	/^TopOfStack	equ	BaseOfLoaderPhyAddr + $	; 栈顶$/;"	d
+UNLINK	include/type.h	/^	OPEN, CLOSE, READ, WRITE, LSEEK, STAT, UNLINK,$/;"	e	enum:msgtype
+UP	include/keyboard.h	79;"	d
+USER_FLAG	include/proc.h	251;"	d
+UWALL	include/memman.h	14;"	d
+VER	kernel/lapic.c	20;"	d	file:
+V_MEM_BASE	include/const.h	158;"	d
+V_MEM_SIZE	include/const.h	159;"	d
+VpageLinBase	include/const.h	94;"	d
+VpageLinLimitMAX	include/const.h	95;"	d
+WAITING	include/proc.h	/^enum proc_stat 			{IDLE,READY,SLEEPING,KILLED,RUNNING,WAITING};	\/\/移植进程间通信时添加 \/\/modified by mingxuan 2019-5-13$/;"	e	enum:proc_stat
+WAKE	include/keyboard.h	87;"	d
+WALL	include/memman.h	13;"	d
+WHENCE	include/fs_const.h	26;"	d
+WRITE	include/type.h	/^	OPEN, CLOSE, READ, WRITE, LSEEK, STAT, UNLINK,$/;"	e	enum:msgtype
+WR_SECT	include/fs_misc.h	102;"	d
+WR_SECT_SCHED	include/fs_misc.h	118;"	d
+X1	kernel/lapic.c	40;"	d	file:
+X128	kernel/lapic.c	42;"	d	file:
+X64	kernel/lapic.c	41;"	d	file:
+XT_WINI_IRQ	include/const.h	62;"	d
+_ARDStruct	boot/loader.asm	/^_ARDStruct:			; Address Range Descriptor Structure$/;"	l
+_BOX_H_	include/box.h	8;"	d
+_MSGQUEUE_H_	include/msgqueue.h	8;"	d
+_MemChkBuf	boot/loader.asm	/^_MemChkBuf:	times	256	db	0$/;"	l
+_NR_boxdel	kernel/syscall.asm	/^_NR_boxdel      	equ 29 ; \/\/added by mingxuan 2019-5-14$/;"	d
+_NR_boxget	kernel/syscall.asm	/^_NR_boxget      	equ 28 ; \/\/added by mingxuan 2019-5-14$/;"	d
+_NR_boxrcv	kernel/syscall.asm	/^_NR_boxrcv      	equ 31 ; \/\/added by mingxuan 2019-5-14$/;"	d
+_NR_boxsnd	kernel/syscall.asm	/^_NR_boxsnd      	equ 30 ; \/\/added by mingxuan 2019-5-14$/;"	d
+_NR_close	kernel/syscall.asm	/^_NR_close			equ 18 ;	\/\/added by xw, 18\/6\/18$/;"	d
+_NR_exec	kernel/syscall.asm	/^_NR_exec     		equ 12 ;	\/\/add by visual 2016.5.16$/;"	d
+_NR_fork	kernel/syscall.asm	/^_NR_fork     		equ 8 ;	\/\/add by visual 2016.4.8$/;"	d
+_NR_free	kernel/syscall.asm	/^_NR_free      		equ 6 ;	\/\/add by visual 2016.4.7$/;"	d
+_NR_free_4k	kernel/syscall.asm	/^_NR_free_4k      	equ 7 ;	\/\/add by visual 2016.4.7$/;"	d
+_NR_get_cpuid	kernel/syscall.asm	/^_NR_get_cpuid		equ 23 ;	\/\/added by mingxuan 2019-3-1$/;"	d
+_NR_get_pid	kernel/syscall.asm	/^_NR_get_pid       	equ 1 ;	\/\/add by visual 2016.4.6$/;"	d
+_NR_get_ticks	kernel/syscall.asm	/^_NR_get_ticks       equ 0 ; 要跟 global.c 中 sys_call_table 的定义相对应！$/;"	d
+_NR_kmalloc	kernel/syscall.asm	/^_NR_kmalloc       	equ 2 ;	\/\/add by visual 2016.4.6$/;"	d
+_NR_kmalloc_4k	kernel/syscall.asm	/^_NR_kmalloc_4k      equ 3 ;	\/\/add by visual 2016.4.7$/;"	d
+_NR_lseek	kernel/syscall.asm	/^_NR_lseek			equ 21 ;	\/\/added by xw, 18\/6\/18$/;"	d
+_NR_malloc	kernel/syscall.asm	/^_NR_malloc      	equ 4 ;	\/\/add by visual 2016.4.7$/;"	d
+_NR_malloc_4k	kernel/syscall.asm	/^_NR_malloc_4k      	equ 5 ;	\/\/add by visual 2016.4.7$/;"	d
+_NR_msgctl	kernel/syscall.asm	/^_NR_msgctl			equ 27 ; \/\/added by mingxuan 2019-5-13$/;"	d
+_NR_msgget	kernel/syscall.asm	/^_NR_msgget      	equ 26 ; \/\/added by mingxuan 2019-5-13$/;"	d
+_NR_msgrcv	kernel/syscall.asm	/^_NR_msgrcv      	equ 25 ; \/\/added by mingxuan 2019-5-13$/;"	d
+_NR_msgsnd	kernel/syscall.asm	/^_NR_msgsnd      	equ 24 ; \/\/added by mingxuan 2019-5-13$/;"	d
+_NR_open	kernel/syscall.asm	/^_NR_open			equ 17 ;	\/\/added by xw, 18\/6\/18$/;"	d
+_NR_print_E	kernel/syscall.asm	/^_NR_print_E			equ 15 ;	\/\/added by xw, 18\/4\/27$/;"	d
+_NR_print_F	kernel/syscall.asm	/^_NR_print_F			equ 16 ;	\/\/added by xw, 18\/4\/27$/;"	d
+_NR_pthread	kernel/syscall.asm	/^_NR_pthread     	equ 9 ;	\/\/add by visual 2016.4.11$/;"	d
+_NR_read	kernel/syscall.asm	/^_NR_read			equ 19 ;	\/\/added by xw, 18\/6\/18$/;"	d
+_NR_sleep	kernel/syscall.asm	/^_NR_sleep			equ 14 ;	\/\/added by xw, 17\/12$/;"	d
+_NR_udisp_int	kernel/syscall.asm	/^_NR_udisp_int     	equ 10 ;	\/\/add by visual 2016.5.16$/;"	d
+_NR_udisp_str	kernel/syscall.asm	/^_NR_udisp_str     	equ 11 ;	\/\/add by visual 2016.5.16$/;"	d
+_NR_unlink	kernel/syscall.asm	/^_NR_unlink			equ 22 ;	\/\/added by xw, 18\/6\/18$/;"	d
+_NR_write	kernel/syscall.asm	/^_NR_write			equ 20 ;	\/\/added by xw, 18\/6\/18$/;"	d
+_NR_yield	kernel/syscall.asm	/^_NR_yield			equ 13 ;	\/\/added by xw, 17\/12$/;"	d
+_ORANGES_CONST_H_	include/const.h	9;"	d
+_ORANGES_HD_H_	include/hd.h	11;"	d
+_ORANGES_KEYBOARD_H_	include/keyboard.h	9;"	d
+_ORANGES_KEYMAP_H_	include/keymap.h	14;"	d
+_ORANGES_PROTECT_H_	include/protect.h	9;"	d
+_ORANGES_TYPE_H_	include/type.h	9;"	d
+_dwBaseAddrHigh	boot/loader.asm	/^	_dwBaseAddrHigh:	dd	0$/;"	d
+_dwBaseAddrLow	boot/loader.asm	/^	_dwBaseAddrLow:		dd	0$/;"	d
+_dwDispPos	boot/loader.asm	/^_dwDispPos:			dd	(80 * 6 + 0) * 2	; 屏幕第 6 行, 第 0 列。$/;"	d
+_dwEchoSize	boot/loader.asm	/^_dwEchoSize		dd	0		;echo size    add by liang 2016.04.20$/;"	d
+_dwFMINumber	boot/loader.asm	/^_dwFMINumber:			dd	0		;add by liang 2016.04.13$/;"	d
+_dwLengthHigh	boot/loader.asm	/^	_dwLengthHigh:		dd	0$/;"	d
+_dwLengthLow	boot/loader.asm	/^	_dwLengthLow:		dd	0$/;"	d
+_dwMCRNumber	boot/loader.asm	/^_dwMCRNumber:			dd	0	; Memory Check Result$/;"	d
+_dwMemSize	boot/loader.asm	/^_dwMemSize:			dd	0$/;"	d
+_dwType	boot/loader.asm	/^	_dwType:		dd	0$/;"	d
+_start	command/start.asm	/^_start:$/;"	l
+_start	init/initstart.asm	/^_start:$/;"	l
+_start	init/initstart1.asm	/^_start:$/;"	l
+_start	init/initstart2.asm	/^_start:$/;"	l
+_start	init/initstart3.asm	/^_start:$/;"	l
+_start	kernel/kernel.asm	/^_start:$/;"	l
+_szMemChkTitle	boot/loader.asm	/^_szMemChkTitle:			db	"BaseAddrL BaseAddrH LengthLow LengthHigh   Type", 0Ah, 0$/;"	d
+_szRAMSize	boot/loader.asm	/^_szRAMSize:			db	"RAM size:", 0$/;"	d
+_szReturn	boot/loader.asm	/^_szReturn:			db	0Ah, 0$/;"	d
+_unused	include/fs_misc.h	/^	u8	_unused[16];	\/**< Stuff for alignment *\/$/;"	m	struct:inode
+acquire	kernel/spinlock.c	/^acquire(struct spinlock *lock)$/;"	f
+add_negative	kernel/semaphore.c	/^int add_negative(int i, int *v)$/;"	f
+add_ready_queue	kernel/proc.c	/^void add_ready_queue(struct ready_queue *rq, PROCESS *p_proc)$/;"	f
+add_ready_queue_index	kernel/proc.c	/^void add_ready_queue_index(struct ready_queue *rq, PROCESS *p_proc, int index)$/;"	f
+add_wait_queue	kernel/semaphore.c	/^void add_wait_queue(struct wait_queue *wq, struct wait_proc *p)$/;"	f
+addr	include/global.h	/^	u32	addr;$/;"	m	struct:memfree
+addr	include/memman.h	/^	u32 addr,size;$/;"	m	struct:FREEINFO
+addr	include/mp.h	/^  u32 *addr;                  \/\/ I\/O APIC address$/;"	m	struct:mpioapic
+allocPCBlock	kernel/global.c	/^PUBLIC 	struct spinlock	allocPCBlock; \/\/对alloc_PCB这一公共过程加锁	\/\/added by mingxuan 2019-3-5$/;"	v	typeref:struct:spinlock
+alloc_PCB	kernel/proc.c	/^PUBLIC PROCESS* alloc_PCB()$/;"	f
+alloc_box	kernel/box.c	/^PUBLIC int alloc_box(int pid)$/;"	f
+alloc_idle_box	kernel/box.c	/^PRIVATE int alloc_idle_box(BOX_NODE_PTR *box_idle_pp)$/;"	f
+alloc_idle_queue	kernel/msgqueue.c	/^PRIVATE int alloc_idle_queue(MSG_QUEUE_NODE_PTR *msg_idle_pp)$/;"	f
+alloc_imap_bit	kernel/fs.c	/^PRIVATE int alloc_imap_bit(int dev)$/;"	f
+alloc_imap_bit_lock	kernel/global.c	/^PUBLIC	struct spinlock alloc_imap_bit_lock; \/\/added by mingxuan 2019-3-20$/;"	v	typeref:struct:spinlock
+alloc_msg_queue	kernel/msgqueue.c	/^PUBLIC int alloc_msg_queue(int key)$/;"	f
+alloc_smap_bit	kernel/fs.c	/^PRIVATE int alloc_smap_bit(int dev, int nr_sects_to_alloc)$/;"	f
+alloc_smap_bit_lock	kernel/global.c	/^PUBLIC	struct spinlock alloc_smap_bit_lock; \/\/added by mingxuan 2019-3-20$/;"	v	typeref:struct:spinlock
+alt_l	kernel/keyboard.c	/^PRIVATE	int	alt_l;		\/* l alt state	 *\/$/;"	v
+alt_r	kernel/keyboard.c	/^PRIVATE	int	alt_r;		\/* r left state	 *\/$/;"	v
+ap_idtinit	kernel/main.c	/^void ap_idtinit(void)$/;"	f
+ap_pgdirinit	kernel/main.c	/^void ap_pgdirinit(void)$/;"	f
+ap_start	kernel/entryother.asm	/^ap_start:$/;"	l
+apicid	include/mp.h	/^  u8 apicid;                 \/\/ local APIC id$/;"	m	struct:mpproc
+apicno	include/mp.h	/^  u8 apicno;                 \/\/ I\/O APIC id$/;"	m	struct:mpioapic
+arg_lin_base	include/proc.h	/^	u32 arg_lin_base;						\/\/参数内存基址$/;"	m	struct:s_lin_memmap
+arg_lin_limit	include/proc.h	/^	u32 arg_lin_limit;						\/\/参数内存界限$/;"	m	struct:s_lin_memmap
+argint	kernel/argget.c	/^PUBLIC int argint(u32 proc_esp, int n, int *ip) {$/;"	f
+argptr	kernel/argget.c	/^PUBLIC int argptr(u32 proc_esp, int n, char **pp) {$/;"	f
+attr	include/protect.h	/^	u8	attr;		\/* P(1) DPL(2) DT(1) TYPE(4) *\/$/;"	m	struct:s_gate
+attr1	include/protect.h	/^	u8	attr1;			\/* P(1) DPL(2) DT(1) TYPE(4) *\/$/;"	m	struct:s_descriptor
+bOdd	boot/boot.asm	/^bOdd			db	0		; 奇数还是偶数$/;"	d
+bOdd	boot/loader.asm	/^bOdd			db	0		; 奇数还是偶数$/;"	d
+b_idle_prior	include/box.h	/^  BOX_NODE_PTR b_idle_prior; \/\/可用信槽头指针$/;"	m	struct:box
+b_use_prior	include/box.h	/^  BOX_NODE_PTR b_use_prior; \/\/占用信槽头指针 $/;"	m	struct:box
+b_w_idle_prior	include/box.h	/^  P_QUEUE_NODE_PTR   b_w_idle_prior; \/\/等待空闲队列$/;"	m	struct:box
+b_w_use_prior	include/box.h	/^  P_QUEUE_NODE_PTR   b_w_use_prior; \/\/等待占用队列$/;"	m	struct:box
+backlink	include/protect.h	/^	u32	backlink;$/;"	m	struct:s_tss
+balance_ready_proc	kernel/proc.c	/^PUBLIC void balance_ready_proc()$/;"	f
+base	include/hd.h	/^	u32	base;	\/\/起始扇区LBA$/;"	m	struct:part_info
+base_high	include/protect.h	/^	u8	base_high;		\/* Base *\/$/;"	m	struct:s_descriptor
+base_low	include/protect.h	/^	u16	base_low;		\/* Base *\/$/;"	m	struct:s_descriptor
+base_mid	include/protect.h	/^	u8	base_mid;		\/* Base *\/$/;"	m	struct:s_descriptor
+base_ticks	include/proc.h	/^	int base_ticks;			   \/\/ticks的基准值，即于渊Orange'S中的priority变量	\/\/modified by mingxuan 2019-3-5$/;"	m	struct:s_proc
+bits	command/start.asm	/^bits 32$/;"	l
+bits	init/initstart.asm	/^bits 32$/;"	l
+bits	init/initstart1.asm	/^bits 32$/;"	l
+bits	init/initstart2.asm	/^bits 32$/;"	l
+bits	init/initstart3.asm	/^bits 32$/;"	l
+bits	kernel/kernel.asm	/^bits 32$/;"	l
+bits	kernel/syscall.asm	/^bits 32$/;"	l
+bm_box_prior	include/box.h	/^  BOX_PTR       *bm_box_prior;$/;"	m	struct:box_manage
+bm_ptr	kernel/box.c	/^PRIVATE BOX_MANAGE_PTR bm_ptr = NULL;$/;"	v
+boot_ind	include/hd.h	/^	u8 boot_ind; \/\/状态$/;"	m	struct:part_ent
+bounds_check	kernel/kernel.asm	/^bounds_check:					; vector_no	= 5$/;"	l
+box	include/box.h	/^typedef struct box {$/;"	s
+box_disp_idle_queue	kernel/box.c	/^PRIVATE void box_disp_idle_queue(int pid)$/;"	f
+box_disp_run_queue	kernel/box.c	/^PRIVATE void box_disp_run_queue(int pid)$/;"	f
+box_manage	include/box.h	/^typedef struct box_manage {$/;"	s
+box_node	include/box.h	/^typedef struct box_node {$/;"	s
+box_pop_node	kernel/box.c	/^PUBLIC int box_pop_node(int pid, char *buffer, int size, int flag)$/;"	f
+box_push_node	kernel/box.c	/^PUBLIC int box_push_node(int pid, char *buffer, int size, int flag)$/;"	f
+boxdel	kernel/syscall.asm	/^boxdel:$/;"	l
+boxget	kernel/syscall.asm	/^boxget:$/;"	l
+boxrcv	kernel/syscall.asm	/^boxrcv:$/;"	l
+boxsnd	kernel/syscall.asm	/^boxsnd:$/;"	l
+breakpoint_exception	kernel/kernel.asm	/^breakpoint_exception:			; vector_no	= 3$/;"	l
+buf	include/keyboard.h	/^	char	buf[KB_IN_BYTES];	\/* 缓冲区 *\/$/;"	m	struct:s_kb
+buffer	include/box.h	/^  char *buffer;$/;"	m	struct:box_node
+buffer	include/msgqueue.h	/^  char*  buffer;$/;"	m	struct:msg_queue_node
+caps_lock	kernel/keyboard.c	/^PRIVATE	int	caps_lock;	\/* Caps Lock	 *\/$/;"	v
+channel	include/proc.h	/^	void* channel;			\/*if non-zero, sleeping on channel, which is a pointer of the target field.$/;"	m	struct:s_proc
+checksum	include/mp.h	/^  u8 checksum;               \/\/ all bytes must add up to 0$/;"	m	struct:mp
+checksum	include/mp.h	/^  u8 checksum;               \/\/ all bytes must add up to 0$/;"	m	struct:mpconf
+child_p_num	include/proc.h	/^	int child_p_num;	\/\/子进程数量$/;"	m	struct:s_tree_info
+child_process	include/proc.h	/^	int child_process[NR_CHILD_MAX];\/\/子进程列表$/;"	m	struct:s_tree_info
+child_t_num	include/proc.h	/^	int child_t_num;	\/\/子线程数量$/;"	m	struct:s_tree_info
+child_thread	include/proc.h	/^	int child_thread[NR_CHILD_MAX];\/\/子线程列表	$/;"	m	struct:s_tree_info
+clear_kernel_pagepte_low	kernel/pagetbl.c	/^void clear_kernel_pagepte_low()$/;"	f
+clear_screen	lib/klib.c	/^PUBLIC void clear_screen()$/;"	f
+cli	include/x86.h	/^cli(void)$/;"	f
+clock_handler	kernel/clock.c	/^PUBLIC void clock_handler(int irq)$/;"	f
+clock_int_msg	kernel/kernel.asm	/^clock_int_msg		db	"^", 0$/;"	d
+close	kernel/syscall.asm	/^close:$/;"	l
+cmpxchg	kernel/spinlock.c	/^cmpxchg(u32 oldval, u32 newval, volatile u32* lock_addr)$/;"	f	file:
+code_with_E0	kernel/keyboard.c	/^PRIVATE	int	code_with_E0;$/;"	v
+column	kernel/keyboard.c	/^PRIVATE	int	column;$/;"	v
+command	include/hd.h	/^	u8	command; \/\/写入REG_CMD(REG_STATUS和REG_CMD共用一个端口地址)$/;"	m	struct:hd_cmd
+copr_error	kernel/kernel.asm	/^copr_error:						; vector_no	= 16$/;"	l
+copr_not_available	kernel/kernel.asm	/^copr_not_available:				; vector_no	= 7$/;"	l
+copr_seg_overrun	kernel/kernel.asm	/^copr_seg_overrun:				; vector_no	= 9$/;"	l
+count	include/hd.h	/^	u8	count;   \/\/写入REG_NSECTOR \/\/扇区数量$/;"	m	struct:hd_cmd
+count	include/keyboard.h	/^	int	count;			\/* 缓冲区中共有多少字节 *\/$/;"	m	struct:s_kb
+count	include/semaphore.h	/^	int count;				 \/\/共享计数值$/;"	m	struct:semaphore
+cpu	include/cpu.h	/^  struct cpu *cpu;$/;"	m	struct:cpu	typeref:struct:cpu::cpu
+cpu	include/cpu.h	/^struct cpu {$/;"	s
+cpu	include/spinlock.h	/^  struct cpu *cpu; \/\/ The cpu holding the lock. \/\/modified by mingxuan 2019-1-16$/;"	m	struct:spinlock	typeref:struct:spinlock::cpu
+cpu_schedule	kernel/proc.c	/^PUBLIC PROCESS *cpu_schedule(void)$/;"	f
+cpuinit	kernel/proc.c	/^PUBLIC int cpuinit()$/;"	f
+cpulist	kernel/mp.c	/^struct cpu cpulist[NCPU];          \/\/mp系统中所有CPU$/;"	v	typeref:struct:cpu
+cpunum	kernel/lapic.c	/^cpunum(void)$/;"	f
+cpunumber	kernel/mp.c	/^int cpunumber = 0;	               \/\/CPU数量$/;"	v
+cr2_count	kernel/pagetbl.c	/^u32 cr2_count = 0;$/;"	v
+cr2_save	kernel/pagetbl.c	/^u32 cr2_save;$/;"	v
+cr3	include/proc.h	/^	u32 cr3;						\/\/add by visual 2016.4.5$/;"	m	struct:s_proc
+cr3	include/protect.h	/^	u32	cr3;$/;"	m	struct:s_tss
+cr3lock	kernel/global.c	/^PUBLIC	struct spinlock cr3lock; \/\/cr3_ready锁	 \/\/added by mingxuan 2019-1-21$/;"	v	typeref:struct:spinlock
+create_file	kernel/fs.c	/^PRIVATE struct inode *create_file(char *path, int flags)$/;"	f
+cs	include/proc.h	/^	u32	cs;			\/*  ┃						│			*\/$/;"	m	struct:s_stackframe
+cs	include/protect.h	/^	u32	cs;$/;"	m	struct:s_tss
+csinit	kernel/kernel.asm	/^csinit:		; “这个跳转指令强制使用刚刚初始化的结构”——<<OS:D&I 2nd>> P90.$/;"	l
+cstart	kernel/start.c	/^PUBLIC void cstart()$/;"	f
+ctrl_l	kernel/keyboard.c	/^PRIVATE	int	ctrl_l;		\/* l ctrl state	 *\/$/;"	v
+ctrl_r	kernel/keyboard.c	/^PRIVATE	int	ctrl_r;		\/* l ctrl state	 *\/$/;"	v
+data	include/box.h	/^	PROCESS             *data;$/;"	m	struct:p_queue_node
+data	include/msgqueue.h	/^	PROCESS             *data;$/;"	m	struct:p_queue_node
+data	kernel/ioapic.c	/^  u32 data;$/;"	m	struct:ioapic	file:
+data_hold	include/proc.h	/^	int data_hold;			\/\/是否拥有数据$/;"	m	struct:s_tree_info
+data_lin_base	include/proc.h	/^	u32 data_lin_base;						\/\/数据段基址$/;"	m	struct:s_lin_memmap
+data_lin_limit	include/proc.h	/^	u32 data_lin_limit;						\/\/数据段界限$/;"	m	struct:s_lin_memmap
+dcount	include/protect.h	/^	u8	dcount;		\/* 该字段只在调用门描述符中有效。$/;"	m	struct:s_gate
+dec	boot/boot.asm	/^	dec	dx									; ┛就跳到下一个 Sector$/;"	d
+dec	boot/boot.asm	/^dec	cx$/;"	l
+dec	boot/loader.asm	/^	dec	dx											; ┛$/;"	d
+dec	boot/loader.asm	/^	dec	dx										; ┛$/;"	d
+dec	boot/loader.asm	/^	dec	dx									; ┛$/;"	d
+delay	lib/klib.c	/^PUBLIC void delay(int time)$/;"	f
+dev_drv_map	include/fs_misc.h	/^struct dev_drv_map {$/;"	s
+device	include/hd.h	/^	u8	device;	 \/\/写入REG_DEVICE$/;"	m	struct:hd_cmd
+dir_ent_fname_off	include/fs_misc.h	/^	u32	dir_ent_fname_off;\/**< Offset of `struct dir_entry::name' *\/$/;"	m	struct:super_block
+dir_ent_inode_off	include/fs_misc.h	/^	u32	dir_ent_inode_off;\/**< Offset of `struct dir_entry::inode_nr' *\/$/;"	m	struct:super_block
+dir_ent_size	include/fs_misc.h	/^	u32	dir_ent_size;     \/\/每个目录项的大小为16Byte$/;"	m	struct:super_block
+dir_entry	include/fs_misc.h	/^struct dir_entry {$/;"	s
+dis_already	lib/kliba.asm	/^dis_already:$/;"	l
+disable_0	lib/kliba.asm	/^disable_0:$/;"	l
+disable_8	lib/kliba.asm	/^disable_8:$/;"	l
+disable_int	lib/kliba.asm	/^disable_int:$/;"	l
+disable_irq	lib/kliba.asm	/^disable_irq:$/;"	l
+disp_Elf	kernel/elf.c	/^PUBLIC void disp_Elf(Elf32_Ehdr* Echo_Ehdr,Elf32_Phdr Echo_Phdr[])$/;"	f
+disp_color_str	lib/kliba.asm	/^disp_color_str:$/;"	l
+disp_color_str_clear_screen	lib/klib.c	/^PUBLIC void	disp_color_str_clear_screen(char * info, int color)$/;"	f
+disp_free	kernel/memman.c	/^PUBLIC void disp_free()$/;"	f
+disp_int	lib/klib.c	/^PUBLIC void disp_int(int input)$/;"	f
+disp_pos	command/echo.c	/^int disp_pos;$/;"	v
+disp_pos	include/global.h	/^EXTERN	int		    disp_pos;$/;"	v
+disp_str	lib/kliba.asm	/^disp_str:$/;"	l
+disp_str_clear_screen	lib/klib.c	/^PUBLIC void	disp_str_clear_screen(char * info)$/;"	f
+divide_error	kernel/kernel.asm	/^divide_error:					; vector_no	= 0$/;"	l
+divide_error_handler	kernel/protect.c	/^PUBLIC void divide_error_handler()$/;"	f
+do_close	kernel/fs.c	/^PRIVATE int do_close(int fd)$/;"	f
+do_down	kernel/semaphore.c	/^void do_down(struct semaphore *sem)$/;"	f
+do_free	kernel/memman.c	/^PUBLIC u32 do_free(u32 addr,u32 size)$/;"	f
+do_free_4k	kernel/memman.c	/^PUBLIC u32 do_free_4k(u32 addr)$/;"	f
+do_kmalloc	kernel/memman.c	/^PUBLIC u32 do_kmalloc(u32 size)$/;"	f
+do_kmalloc_4k	kernel/memman.c	/^PUBLIC u32 do_kmalloc_4k()$/;"	f
+do_lseek	kernel/fs.c	/^PRIVATE int do_lseek(MESSAGE *fs_msg)$/;"	f
+do_malloc	kernel/memman.c	/^PUBLIC u32 do_malloc(u32 size)$/;"	f
+do_malloc_4k	kernel/memman.c	/^PUBLIC u32 do_malloc_4k()$/;"	f
+do_open	kernel/fs.c	/^PRIVATE int do_open(MESSAGE *fs_msg)$/;"	f
+do_rdwt	kernel/fs.c	/^PRIVATE int do_rdwt(MESSAGE *fs_msg)$/;"	f
+do_unlink	kernel/fs.c	/^PRIVATE int do_unlink(MESSAGE *fs_msg)$/;"	f
+do_up	kernel/semaphore.c	/^void do_up(struct semaphore *sem)$/;"	f
+double_fault	kernel/kernel.asm	/^double_fault:					; vector_no	= 8$/;"	l
+down	include/semaphore.h	/^static inline void down(struct semaphore *sem)$/;"	f
+down_failed	kernel/kernel.asm	/^down_failed:$/;"	l
+driver_nr	include/fs_misc.h	/^	int driver_nr; \/**< The proc nr.\\ of the device driver. *\/$/;"	m	struct:dev_drv_map
+ds	include/proc.h	/^	u32	ds;			\/* ┃						│			*\/$/;"	m	struct:s_stackframe
+ds	include/protect.h	/^	u32	ds;$/;"	m	struct:s_tss
+dw	boot/boot.asm	/^dw 	0xaa55				; 结束标志$/;"	l
+dwBaseAddrHigh	boot/loader.asm	/^	dwBaseAddrHigh	equ	BaseOfLoaderPhyAddr + _dwBaseAddrHigh$/;"	d
+dwBaseAddrLow	boot/loader.asm	/^	dwBaseAddrLow	equ	BaseOfLoaderPhyAddr + _dwBaseAddrLow$/;"	d
+dwDispPos	boot/loader.asm	/^dwDispPos		equ	BaseOfLoaderPhyAddr + _dwDispPos$/;"	d
+dwEchoSize	boot/loader.asm	/^dwEchoSize		equ	BaseOfLoaderPhyAddr + _dwEchoSize		;add by liang 2016.04.21$/;"	d
+dwFMINumber	boot/loader.asm	/^dwFMINumber		equ	BaseOfLoaderPhyAddr + _dwFMINumber	;add by liang 2016.04.13$/;"	d
+dwKernelSize	boot/loader.asm	/^dwKernelSize		dd	0	; KERNEL.BIN 文件大小$/;"	d
+dwLengthHigh	boot/loader.asm	/^	dwLengthHigh	equ	BaseOfLoaderPhyAddr + _dwLengthHigh$/;"	d
+dwLengthLow	boot/loader.asm	/^	dwLengthLow	equ	BaseOfLoaderPhyAddr + _dwLengthLow$/;"	d
+dwMCRNumber	boot/loader.asm	/^dwMCRNumber		equ	BaseOfLoaderPhyAddr + _dwMCRNumber$/;"	d
+dwMemSize	boot/loader.asm	/^dwMemSize		equ	BaseOfLoaderPhyAddr + _dwMemSize$/;"	d
+dwType	boot/loader.asm	/^	dwType		equ	BaseOfLoaderPhyAddr + _dwType$/;"	d
+e_ehsize	include/elf.h	/^	u16	e_ehsize;				\/\/elf header（本文件头）的长度 $/;"	m	struct:__anon4
+e_entry	include/elf.h	/^	u32	e_entry;				\/\/ELF程序的入口虚拟地址$/;"	m	struct:__anon4
+e_flags	include/elf.h	/^	u32	e_flags;				\/\/用于标识ELF文件平台相关的属性 $/;"	m	struct:__anon4
+e_ident	include/elf.h	/^	u8	e_ident[EI_NIDENT];		\/\/ELF魔数，ELF字长，字节序，ELF文件版本等$/;"	m	struct:__anon4
+e_machine	include/elf.h	/^	u16	e_machine;				\/\/ELF的CPU平台属性 $/;"	m	struct:__anon4
+e_phentsize	include/elf.h	/^	u16	e_phentsize;			\/\/program header table 中每一个条目的长度$/;"	m	struct:__anon4
+e_phnum	include/elf.h	/^	u16	e_phnum;				\/\/program header table 中有多少个条目$/;"	m	struct:__anon4
+e_phoff	include/elf.h	/^	u32	e_phoff;				\/\/program header table(program头)在文件中的偏移$/;"	m	struct:__anon4
+e_shentsize	include/elf.h	/^	u16	e_shentsize;			\/\/section header table 中每一个条目的长度$/;"	m	struct:__anon4
+e_shnum	include/elf.h	/^	u16	e_shnum;				\/\/section header table 中有多少个条目$/;"	m	struct:__anon4
+e_shoff	include/elf.h	/^	u32	e_shoff;				\/\/section header table(section头)在文件中的偏移$/;"	m	struct:__anon4
+e_shstrndx	include/elf.h	/^	u16	e_shstrndx;				\/\/section header table 中字符索引 $/;"	m	struct:__anon4
+e_type	include/elf.h	/^	u16	e_type;					\/\/ELF文件类型，REL, 可执行文件，共享目标文件等$/;"	m	struct:__anon4
+e_version	include/elf.h	/^	u32	e_version;				\/\/ELF版本号$/;"	m	struct:__anon4
+eax	include/proc.h	/^	u32	eax;		\/* ┛						│			*\/$/;"	m	struct:s_stackframe
+eax	include/protect.h	/^	u32	eax;$/;"	m	struct:s_tss
+ebp	include/proc.h	/^	u32	ebp;		\/* ┃						│			*\/$/;"	m	struct:s_stackframe
+ebp	include/protect.h	/^	u32	ebp;$/;"	m	struct:s_tss
+ebx	include/proc.h	/^	u32	ebx;		\/* ┃						↑栈从高地址往低地址增长*\/		$/;"	m	struct:s_stackframe
+ebx	include/protect.h	/^	u32	ebx;$/;"	m	struct:s_tss
+ecx	include/proc.h	/^	u32	ecx;		\/* ┃						│			*\/$/;"	m	struct:s_stackframe
+ecx	include/protect.h	/^	u32	ecx;$/;"	m	struct:s_tss
+edi	include/proc.h	/^	u32	edi;		\/* ┃						│			*\/$/;"	m	struct:s_stackframe
+edi	include/protect.h	/^	u32	edi;$/;"	m	struct:s_tss
+edx	include/proc.h	/^	u32	edx;		\/* ┃						│			*\/$/;"	m	struct:s_stackframe
+edx	include/protect.h	/^	u32	edx;$/;"	m	struct:s_tss
+eflags	include/proc.h	/^	u32	eflags;		\/*  ┣ these are pushed by CPU during interrupt	│			*\/$/;"	m	struct:s_stackframe
+eip	include/proc.h	/^	u32	eip;		\/*  ┓						│			*\/$/;"	m	struct:s_stackframe
+eip	include/protect.h	/^	u32	eip;$/;"	m	struct:s_tss
+enable_0	lib/kliba.asm	/^enable_0:$/;"	l
+enable_8	lib/kliba.asm	/^enable_8:$/;"	l
+enable_int	lib/kliba.asm	/^enable_int:$/;"	l
+enable_irq	lib/kliba.asm	/^enable_irq:$/;"	l
+end_cyl	include/hd.h	/^	u8 end_cyl;	   \/\/结束柱面号的低8位$/;"	m	struct:part_ent
+end_head	include/hd.h	/^	u8 end_head;   \/\/结束磁头号$/;"	m	struct:part_ent
+end_sector	include/hd.h	/^	u8 end_sector; \/\/结束扇区号(仅用了低6位，高2位为结束柱面号的第8,9位)$/;"	m	struct:part_ent
+entry	include/mp.h	/^  u16 entry;                 \/\/ entry count$/;"	m	struct:mpconf
+es	include/proc.h	/^	u32	es;			\/* ┃						│			*\/$/;"	m	struct:s_stackframe
+es	include/protect.h	/^	u32	es;$/;"	m	struct:s_tss
+esi	include/proc.h	/^	u32	esi;		\/* ┣ pushed by save()				│			*\/$/;"	m	struct:s_stackframe
+esi	include/protect.h	/^	u32	esi;$/;"	m	struct:s_tss
+esp	include/proc.h	/^	u32	esp;		\/*  ┃						│			*\/$/;"	m	struct:s_stackframe
+esp	include/protect.h	/^	u32	esp;$/;"	m	struct:s_tss
+esp0	include/protect.h	/^	u32	esp0;		\/* stack pointer to use during interrupt *\/$/;"	m	struct:s_tss
+esp1	include/protect.h	/^	u32	esp1;$/;"	m	struct:s_tss
+esp2	include/protect.h	/^	u32	esp2;$/;"	m	struct:s_tss
+esp_save_context	include/proc.h	/^	char* esp_save_context;	\/\/to save the position of esp in the kernel stack of the process$/;"	m	struct:s_proc
+esp_save_int	include/proc.h	/^	char* esp_save_int;		\/\/to save the position of esp in the kernel stack of the process$/;"	m	struct:s_proc
+esp_save_syscall	include/proc.h	/^	char* esp_save_syscall;	\/\/to save the position of esp in the kernel stack of the process$/;"	m	struct:s_proc
+exception_handler	kernel/protect.c	/^PUBLIC void exception_handler(int vec_no, int err_code, int eip, int cs, int eflags)$/;"	f
+exec	kernel/syscall.asm	/^exec:$/;"	l
+exec_elfcpy	kernel/exec.c	/^PRIVATE u32 exec_elfcpy(u32 fd,Elf32_Phdr Echo_Phdr,u32 attribute)  \/\/ 这部分代码将来要移动到exec.c文件中，包括下面exec()中的一部分$/;"	f
+exec_load	kernel/exec.c	/^PRIVATE u32 exec_load(u32 fd,const Elf32_Ehdr* Echo_Ehdr,const Elf32_Phdr Echo_Phdr[])$/;"	f
+exec_pcb_init	kernel/exec.c	/^PRIVATE int exec_pcb_init(char* path)$/;"	f
+extern	command/start.asm	/^extern main$/;"	l
+extern	init/initstart.asm	/^extern main$/;"	l
+extern	init/initstart1.asm	/^extern main$/;"	l
+extern	init/initstart2.asm	/^extern main$/;"	l
+extern	init/initstart3.asm	/^extern main$/;"	l
+extern	kernel/kernel.asm	/^extern	clock_handler$/;"	l
+extern	kernel/kernel.asm	/^extern	cstart$/;"	l
+extern	kernel/kernel.asm	/^extern	delay$/;"	l
+extern	kernel/kernel.asm	/^extern	disp_int$/;"	l
+extern	kernel/kernel.asm	/^extern	disp_pos$/;"	l
+extern	kernel/kernel.asm	/^extern	disp_str$/;"	l
+extern	kernel/kernel.asm	/^extern	divide_error_handler	;added by xw, 18\/12\/22$/;"	l
+extern	kernel/kernel.asm	/^extern	do_down			;added by mingxuan 2019-3-29$/;"	l
+extern	kernel/kernel.asm	/^extern	exception_handler$/;"	l
+extern	kernel/kernel.asm	/^extern	gdt_ptr$/;"	l
+extern	kernel/kernel.asm	/^extern	idt_ptr$/;"	l
+extern	kernel/kernel.asm	/^extern	irq_table$/;"	l
+extern	kernel/kernel.asm	/^extern	k_reenter$/;"	l
+extern	kernel/kernel.asm	/^extern	kernel_initial		;added by xw, 18\/6\/10$/;"	l
+extern	kernel/kernel.asm	/^extern	kernel_main$/;"	l
+extern	kernel/kernel.asm	/^extern	p_proc_current$/;"	l
+extern	kernel/kernel.asm	/^extern	p_proc_next			;added by xw, 18\/4\/26$/;"	l
+extern	kernel/kernel.asm	/^extern	page_fault_handler$/;"	l
+extern	kernel/kernel.asm	/^extern	renew_tss		;added by mingxuan 2019-1-22$/;"	l
+extern	kernel/kernel.asm	/^extern	spurious_irq$/;"	l
+extern	kernel/kernel.asm	/^extern	sys_call_table$/;"	l
+extern	kernel/kernel.asm	/^extern	tss$/;"	l
+extern	kernel/kernel.asm	/^extern 	cr3_ready			;add by visual 2016.4.5$/;"	l
+extern	kernel/kernel.asm	/^extern  do_up			;added by mingxuan 2019-3-29$/;"	l
+extern	kernel/kernel.asm	/^extern  p_proc_current$/;"	l
+extern	kernel/kernel.asm	/^extern  schedule		;modified by mingxuan 2019-3-5$/;"	l
+extern	kernel/kernel.asm	/^extern  switch_pde$/;"	l
+extern	lib/kliba.asm	/^extern	disp_pos$/;"	l
+f_desc_table	kernel/fs.c	/^PRIVATE struct file_desc   f_desc_table[NR_FILE_DESC];$/;"	v	typeref:struct:file_desc
+f_desc_table_lock	kernel/global.c	/^PUBLIC  struct spinlock f_desc_table_lock;   \/\/added by mingxuan 2019-3-20$/;"	v	typeref:struct:spinlock
+fake_open	kernel/file.c	/^PUBLIC u32 fake_open(char* path,char* mode)		\/\/modified by xw, 18\/5\/30$/;"	f
+fake_read	kernel/file.c	/^PUBLIC u32 fake_read(u32 fd,void* buffer,u32 size)	\/\/modified by xw, 18\/5\/30$/;"	f
+fake_seek	kernel/file.c	/^PUBLIC u32 fake_seek(u32 pos)	\/\/modified by xw, 18\/5\/30$/;"	f
+fd_inode	include/fs_misc.h	/^	struct inode*	fd_inode;	\/\/指向inode的指针$/;"	m	struct:file_desc	typeref:struct:file_desc::inode
+fd_mode	include/fs_misc.h	/^	int		fd_mode;	\/\/记录这个fd的操作类型:读、写、既读又写$/;"	m	struct:file_desc
+fd_pos	include/fs_misc.h	/^	int		fd_pos;		\/\/记录读写到了文件的什么位置$/;"	m	struct:file_desc
+feature	include/mp.h	/^  u32 feature;                 \/\/ feature flags from CPUID instruction$/;"	m	struct:mpproc
+features	include/hd.h	/^	u8	features;\/\/写入REG_FEATURES(REG_FEATURES和REG_ERROR共用一个端口地址)$/;"	m	struct:hd_cmd
+fetchint	kernel/argget.c	/^int fetchint(u32 addr, int *ip) {$/;"	f
+file_desc	include/fs_misc.h	/^struct file_desc {$/;"	s
+filp	include/proc.h	/^	struct file_desc * filp[NR_FILES];$/;"	m	struct:s_proc	typeref:struct:s_proc::file_desc
+find_busiest_cpu	kernel/proc.c	/^struct cpu *find_busiest_cpu()$/;"	f
+flags	include/mp.h	/^  u8 flags;                  \/\/ CPU flags$/;"	m	struct:mpproc
+flags	include/mp.h	/^  u8 flags;                  \/\/ I\/O APIC flags$/;"	m	struct:mpioapic
+flags	include/protect.h	/^	u32	flags;$/;"	m	struct:s_tss
+fork	kernel/syscall.asm	/^fork:$/;"	l
+fork_mem_cpy	kernel/fork.c	/^PRIVATE int fork_mem_cpy(u32 ppid,u32 pid)$/;"	f
+fork_pcb_cpy	kernel/fork.c	/^PRIVATE int fork_pcb_cpy(PROCESS* p_child)$/;"	f
+fork_update_info	kernel/fork.c	/^PRIVATE int fork_update_info(PROCESS* p_child)$/;"	f
+free	include/memman.h	/^	struct FREEINFO free[MEMMAN_FREES];	\/\/空闲内存$/;"	m	struct:MEMMAN	typeref:struct:MEMMAN::FREEINFO
+free	kernel/syscall.asm	/^free:$/;"	l
+free_4k	kernel/syscall.asm	/^free_4k:$/;"	l
+free_PCB	kernel/proc.c	/^PUBLIC void free_PCB(PROCESS *p)$/;"	f
+free_box	kernel/box.c	/^PUBLIC int free_box(int pid)$/;"	f
+free_msg_queue	kernel/msgqueue.c	/^PUBLIC int free_msg_queue(int msqid)$/;"	f
+free_process_queue	kernel/box.c	/^PRIVATE int free_process_queue(P_QUEUE_NODE_PTR *pq_ptr)$/;"	f
+free_process_queue	kernel/msgqueue.c	/^PRIVATE int free_process_queue(P_QUEUE_NODE_PTR *pq_ptr)$/;"	f
+free_queue	kernel/box.c	/^PRIVATE int free_queue(BOX_NODE_PTR *box_pp)$/;"	f
+free_queue	kernel/msgqueue.c	/^PRIVATE int free_queue(MSG_QUEUE_NODE_PTR *msg_queue_pp)$/;"	f
+frees	include/memman.h	/^	u32 frees,maxfrees,lostsize,losts;	\/\/frees为当前空闲内存块数$/;"	m	struct:MEMMAN
+front	include/cpu.h	/^	struct ready_proc *front; \/\/就绪队列的头指针$/;"	m	struct:ready_queue	typeref:struct:ready_queue::ready_proc
+front	include/hd.h	/^	RWInfo *front;$/;"	m	struct:__anon1
+front	include/semaphore.h	/^	struct wait_proc *front; \/\/就绪队列的头指针$/;"	m	struct:wait_queue	typeref:struct:wait_queue::wait_proc
+fs	include/proc.h	/^	u32	fs;			\/* ┃						│			*\/$/;"	m	struct:s_stackframe
+fs	include/protect.h	/^	u32	fs;$/;"	m	struct:s_tss
+gdt	include/cpu.h	/^  DESCRIPTOR gdt[GDT_SIZE]; 	\/\/added by mingxuan 2018-12-22$/;"	m	struct:cpu
+gdt	include/global.h	/^EXTERN	DESCRIPTOR	gdt[GDT_SIZE];$/;"	v
+gdt_base	include/cpu.h	/^	u32 gdt_base;$/;"	m	struct:GDT_PTR
+gdt_limit	include/cpu.h	/^	u16 gdt_limit;$/;"	m	struct:GDT_PTR
+gdt_ptr	include/cpu.h	/^  struct GDT_PTR *gdt_ptr;		\/\/added by mingxuan 2018-12-22 \/\/结构体中嵌套结构体时，一定要单独定义内层结构体$/;"	m	struct:cpu	typeref:struct:cpu::GDT_PTR
+gdt_ptr	include/global.h	/^EXTERN	u8		    gdt_ptr[6];	\/\/ 0~15:Limit  16~47:Base$/;"	v
+gdt_ptr_list	kernel/mp.c	/^struct GDT_PTR gdt_ptr_list[NCPU]; \/\/结构体中嵌套结构体时，一定要单独定义内层结构体 \/\/added by mingxuan 2019-4-1$/;"	v	typeref:struct:GDT_PTR
+gdtinit	kernel/main.c	/^void gdtinit(void)$/;"	f
+general_protection	kernel/kernel.asm	/^general_protection:				; vector_no	= 13$/;"	l
+getFreeMemInfo	boot/loader.asm	/^getFreeMemInfo:$/;"	l
+get_arg	kernel/kernel.asm	/^get_arg:$/;"	l
+get_byte_from_kbuf	kernel/keyboard.c	/^PRIVATE u8 get_byte_from_kbuf()       \/* 从键盘缓冲区中读取下一个字节 *\/$/;"	f
+get_cpuid	kernel/syscall.asm	/^get_cpuid:$/;"	l
+get_inode	kernel/fs.c	/^PRIVATE struct inode * get_inode(int dev, int num)$/;"	f
+get_inode_sched	kernel/fs.c	/^PRIVATE struct inode *get_inode_sched(int dev, int num)$/;"	f
+get_page_phy_addr	kernel/pagetbl.c	/^PUBLIC inline u32 get_page_phy_addr(	u32 pid,\/\/页表物理地址				\/\/edit by visual 2016.5.19$/;"	f
+get_part_table	kernel/hd.c	/^PRIVATE void get_part_table(int drive, int sect_nr, struct part_ent * entry)$/;"	f
+get_pde_index	kernel/pagetbl.c	/^PUBLIC	inline u32 get_pde_index(u32 AddrLin)$/;"	f
+get_pde_phy_addr	kernel/pagetbl.c	/^ PUBLIC inline u32 get_pde_phy_addr(u32 pid)$/;"	f
+get_pid	kernel/syscall.asm	/^get_pid:$/;"	l
+get_pte_index	kernel/pagetbl.c	/^PUBLIC inline u32 get_pte_index(u32 AddrLin)$/;"	f
+get_pte_phy_addr	kernel/pagetbl.c	/^PUBLIC inline u32 get_pte_phy_addr(	u32 pid,\/\/页目录物理地址		\/\/edit by visual 2016.5.19$/;"	f
+get_super_block	kernel/fs.c	/^PRIVATE struct super_block *get_super_block(int dev)$/;"	f
+get_ticks	kernel/syscall.asm	/^get_ticks:$/;"	l
+global	command/start.asm	/^global _start$/;"	l
+global	init/initstart.asm	/^global _start$/;"	l
+global	init/initstart1.asm	/^global _start$/;"	l
+global	init/initstart2.asm	/^global _start$/;"	l
+global	init/initstart3.asm	/^global _start$/;"	l
+global	kernel/kernel.asm	/^global	bounds_check$/;"	l
+global	kernel/kernel.asm	/^global	breakpoint_exception$/;"	l
+global	kernel/kernel.asm	/^global	copr_error$/;"	l
+global	kernel/kernel.asm	/^global	copr_not_available$/;"	l
+global	kernel/kernel.asm	/^global	copr_seg_overrun$/;"	l
+global	kernel/kernel.asm	/^global	divide_error$/;"	l
+global	kernel/kernel.asm	/^global	double_fault$/;"	l
+global	kernel/kernel.asm	/^global	general_protection$/;"	l
+global	kernel/kernel.asm	/^global	hwint00$/;"	l
+global	kernel/kernel.asm	/^global	hwint01$/;"	l
+global	kernel/kernel.asm	/^global	hwint02$/;"	l
+global	kernel/kernel.asm	/^global	hwint03$/;"	l
+global	kernel/kernel.asm	/^global	hwint04$/;"	l
+global	kernel/kernel.asm	/^global	hwint05$/;"	l
+global	kernel/kernel.asm	/^global	hwint06$/;"	l
+global	kernel/kernel.asm	/^global	hwint07$/;"	l
+global	kernel/kernel.asm	/^global	hwint08$/;"	l
+global	kernel/kernel.asm	/^global	hwint09$/;"	l
+global	kernel/kernel.asm	/^global	hwint10$/;"	l
+global	kernel/kernel.asm	/^global	hwint11$/;"	l
+global	kernel/kernel.asm	/^global	hwint12$/;"	l
+global	kernel/kernel.asm	/^global	hwint13$/;"	l
+global	kernel/kernel.asm	/^global	hwint14$/;"	l
+global	kernel/kernel.asm	/^global	hwint15$/;"	l
+global	kernel/kernel.asm	/^global	inval_opcode$/;"	l
+global	kernel/kernel.asm	/^global	inval_tss$/;"	l
+global	kernel/kernel.asm	/^global	nmi$/;"	l
+global	kernel/kernel.asm	/^global	overflow$/;"	l
+global	kernel/kernel.asm	/^global	page_fault$/;"	l
+global	kernel/kernel.asm	/^global	segment_not_present$/;"	l
+global	kernel/kernel.asm	/^global	single_step_exception$/;"	l
+global	kernel/kernel.asm	/^global	stack_exception$/;"	l
+global	kernel/kernel.asm	/^global _start	; 导出 _start$/;"	l
+global	kernel/kernel.asm	/^global down_failed ;added by mingxuan 2019-4-1$/;"	l
+global	kernel/kernel.asm	/^global get_arg			;added by xw, 18\/6\/18$/;"	l
+global	kernel/kernel.asm	/^global halt  			;added by xw, 18\/6\/11$/;"	l
+global	kernel/kernel.asm	/^global read_cr2   ;\/\/add by visual 2016.5.9$/;"	l
+global	kernel/kernel.asm	/^global read_cr3    ;added by mingxuan 2018-10-17$/;"	l
+global	kernel/kernel.asm	/^global refresh_page_cache ; \/\/ add by visual 2016.5.12$/;"	l
+global	kernel/kernel.asm	/^global restart_initial	;Added by xw, 18\/4\/21$/;"	l
+global	kernel/kernel.asm	/^global restart_restore	;Added by xw, 18\/4\/21$/;"	l
+global	kernel/kernel.asm	/^global sched			;Added by xw, 18\/4\/21$/;"	l
+global	kernel/kernel.asm	/^global sys_call$/;"	l
+global	kernel/kernel.asm	/^global up_wakeup   ;added by mingxuan 2019-4-1$/;"	l
+global	kernel/syscall.asm	/^global	close		;		\/\/added by xw, 18\/6\/18$/;"	l
+global	kernel/syscall.asm	/^global	exec		;		\/\/add by visual 2016.5.16$/;"	l
+global	kernel/syscall.asm	/^global	fork		;		\/\/add by visual 2016.4.8$/;"	l
+global	kernel/syscall.asm	/^global	free		;		\/\/add by visual 2016.4.7$/;"	l
+global	kernel/syscall.asm	/^global	free_4k		;		\/\/add by visual 2016.4.7$/;"	l
+global	kernel/syscall.asm	/^global	get_cpuid	;		\/\/added by mingxuan 2019-3-1$/;"	l
+global	kernel/syscall.asm	/^global	get_pid		;		\/\/add by visual 2016.4.6$/;"	l
+global	kernel/syscall.asm	/^global	get_ticks$/;"	l
+global	kernel/syscall.asm	/^global	kmalloc		;		\/\/add by visual 2016.4.6$/;"	l
+global	kernel/syscall.asm	/^global	kmalloc_4k	;		\/\/add by visual 2016.4.7$/;"	l
+global	kernel/syscall.asm	/^global	lseek		;		\/\/added by xw, 18\/6\/18$/;"	l
+global	kernel/syscall.asm	/^global	malloc		;		\/\/add by visual 2016.4.7$/;"	l
+global	kernel/syscall.asm	/^global	malloc_4k	;		\/\/add by visual 2016.4.7$/;"	l
+global	kernel/syscall.asm	/^global	open		;		\/\/added by xw, 18\/6\/18$/;"	l
+global	kernel/syscall.asm	/^global	print_E		;		\/\/added by xw$/;"	l
+global	kernel/syscall.asm	/^global	print_F		;		\/\/added by xw$/;"	l
+global	kernel/syscall.asm	/^global	pthread		;		\/\/add by visual 2016.4.11$/;"	l
+global	kernel/syscall.asm	/^global	read		;		\/\/added by xw, 18\/6\/18$/;"	l
+global	kernel/syscall.asm	/^global	udisp_int	;		\/\/add by visual 2016.5.16$/;"	l
+global	kernel/syscall.asm	/^global	udisp_str	;		\/\/add by visual 2016.5.16$/;"	l
+global	kernel/syscall.asm	/^global	unlink		;		\/\/added by xw, 18\/6\/19$/;"	l
+global	kernel/syscall.asm	/^global	write		;		\/\/added by xw, 18\/6\/18$/;"	l
+global	kernel/syscall.asm	/^global  boxdel 		; 		\/\/added by mingxuan 2019-5-14$/;"	l
+global	kernel/syscall.asm	/^global  boxget 		; 		\/\/added by mingxuan 2019-5-14$/;"	l
+global	kernel/syscall.asm	/^global  boxrcv 		; 		\/\/added by mingxuan 2019-5-14$/;"	l
+global	kernel/syscall.asm	/^global  boxsnd 		; 		\/\/added by mingxuan 2019-5-14$/;"	l
+global	kernel/syscall.asm	/^global  msgctl 		;		\/\/added by mingxuan 2019-5-13$/;"	l
+global	kernel/syscall.asm	/^global  msgget 		; 		\/\/added by mingxuan 2019-5-13$/;"	l
+global	kernel/syscall.asm	/^global  msgrcv 		; 		\/\/added by mingxuan 2019-5-13$/;"	l
+global	kernel/syscall.asm	/^global  msgsnd 		; 		\/\/added by mingxuan 2019-5-13$/;"	l
+global	kernel/syscall.asm	/^global  sleep		;		\/\/added by xw$/;"	l
+global	kernel/syscall.asm	/^global  yield		;		\/\/added by xw$/;"	l
+global	lib/kliba.asm	/^global	disable_int$/;"	l
+global	lib/kliba.asm	/^global	disp_color_str$/;"	l
+global	lib/kliba.asm	/^global	disp_str$/;"	l
+global	lib/kliba.asm	/^global	enable_int$/;"	l
+global	lib/kliba.asm	/^global	in_byte$/;"	l
+global	lib/kliba.asm	/^global	out_byte$/;"	l
+global	lib/kliba.asm	/^global	port_read$/;"	l
+global	lib/kliba.asm	/^global	port_write$/;"	l
+global	lib/kliba.asm	/^global  Disable_Interrupts	;added by mingxuan 2019-5-13$/;"	l
+global	lib/kliba.asm	/^global  Enable_Interrupts	;added by mingxuan 2019-5-13$/;"	l
+global	lib/kliba.asm	/^global  Get_Current_EFLAGS	;added by mingxuan 2019-5-13$/;"	l
+global	lib/kliba.asm	/^global  disable_irq$/;"	l
+global	lib/kliba.asm	/^global  enable_irq$/;"	l
+global	lib/string.asm	/^global	memcpy$/;"	l
+global	lib/string.asm	/^global	memset$/;"	l
+global	lib/string.asm	/^global  strcpy$/;"	l
+global	lib/string.asm	/^global  strlen$/;"	l
+gs	include/proc.h	/^	u32	gs;			\/* ┓						│			*\/$/;"	m	struct:s_stackframe
+gs	include/protect.h	/^	u32	gs;$/;"	m	struct:s_tss
+halt	kernel/kernel.asm	/^halt:$/;"	l
+hd_close	kernel/hd.c	/^PUBLIC void hd_close(int device)$/;"	f
+hd_cmd	include/hd.h	/^struct hd_cmd$/;"	s
+hd_cmd_out	kernel/hd.c	/^PRIVATE void hd_cmd_out(struct hd_cmd* cmd)$/;"	f
+hd_handler	kernel/hd.c	/^PRIVATE void hd_handler(int irq)	\/\/硬盘中断处理程序$/;"	f
+hd_identify	kernel/hd.c	/^PRIVATE void hd_identify(int drive)$/;"	f
+hd_info	include/hd.h	/^struct hd_info$/;"	s
+hd_info	kernel/hd.c	/^PRIVATE	struct hd_info hd_info[1];	\/\/记录硬盘的分区信息，每个硬盘应有一个hd_info结构$/;"	v	typeref:struct:hd_info
+hd_int_waiting_flag	kernel/hd.c	/^PRIVATE volatile int hd_int_waiting_flag;$/;"	v
+hd_ioctl	kernel/hd.c	/^PUBLIC void hd_ioctl(MESSAGE *p)$/;"	f
+hd_open	kernel/hd.c	/^PUBLIC void hd_open(int device) \/\/传入的是一个次设备号MINOR(ROOT_DEV)$/;"	f
+hd_rdwt	kernel/hd.c	/^PUBLIC void hd_rdwt(MESSAGE * p)$/;"	f
+hd_rdwt_real	kernel/hd.c	/^PRIVATE void hd_rdwt_real(RWInfo *p)$/;"	f
+hd_rdwt_sched	kernel/hd.c	/^PUBLIC void hd_rdwt_sched(MESSAGE *p)$/;"	f
+hd_service	kernel/hd.c	/^PUBLIC void hd_service()$/;"	f
+hd_status	kernel/hd.c	/^PRIVATE	u8 hd_status;$/;"	v
+hdbuf	kernel/hd.c	/^PRIVATE	u8 hdbuf[SECTOR_SIZE * 2];	\/\/硬盘读写缓冲区$/;"	v
+hdque	kernel/hd.c	/^PRIVATE HDQueue hdque;$/;"	v
+heap_lin_base	include/proc.h	/^	u32 heap_lin_base;						\/\/堆基址$/;"	m	struct:s_lin_memmap
+heap_lin_limit	include/proc.h	/^	u32 heap_lin_limit;						\/\/堆界限	$/;"	m	struct:s_lin_memmap
+hwint00	kernel/kernel.asm	/^hwint00:		; Interrupt routine for irq 0 (the clock).$/;"	l
+hwint01	kernel/kernel.asm	/^hwint01:		; Interrupt routine for irq 1 (keyboard)$/;"	l
+hwint02	kernel/kernel.asm	/^hwint02:		; Interrupt routine for irq 2 (cascade!)$/;"	l
+hwint03	kernel/kernel.asm	/^hwint03:		; Interrupt routine for irq 3 (second serial)$/;"	l
+hwint04	kernel/kernel.asm	/^hwint04:		; Interrupt routine for irq 4 (first serial)$/;"	l
+hwint05	kernel/kernel.asm	/^hwint05:		; Interrupt routine for irq 5 (XT winchester)$/;"	l
+hwint06	kernel/kernel.asm	/^hwint06:		; Interrupt routine for irq 6 (floppy)$/;"	l
+hwint07	kernel/kernel.asm	/^hwint07:		; Interrupt routine for irq 7 (printer)$/;"	l
+hwint08	kernel/kernel.asm	/^hwint08:		; Interrupt routine for irq 8 (realtime clock).$/;"	l
+hwint09	kernel/kernel.asm	/^hwint09:		; Interrupt routine for irq 9 (irq 2 redirected)$/;"	l
+hwint10	kernel/kernel.asm	/^hwint10:		; Interrupt routine for irq 10$/;"	l
+hwint11	kernel/kernel.asm	/^hwint11:		; Interrupt routine for irq 11$/;"	l
+hwint12	kernel/kernel.asm	/^hwint12:		; Interrupt routine for irq 12$/;"	l
+hwint13	kernel/kernel.asm	/^hwint13:		; Interrupt routine for irq 13 (FPU exception)$/;"	l
+hwint14	kernel/kernel.asm	/^hwint14:		; Interrupt routine for irq 14 (AT winchester)$/;"	l
+hwint15	kernel/kernel.asm	/^hwint15:		; Interrupt routine for irq 15$/;"	l
+i_cnt	include/fs_misc.h	/^	int	i_cnt;	\/\/此时有多少进程在共享该inode$/;"	m	struct:inode
+i_dev	include/fs_misc.h	/^	int	i_dev;$/;"	m	struct:inode
+i_mode	include/fs_misc.h	/^	u32	i_mode;			\/\/文件类型$/;"	m	struct:inode
+i_nr_sects	include/fs_misc.h	/^	u32	i_nr_sects;		\/\/该文件占用的总的扇区数$/;"	m	struct:inode
+i_num	include/fs_misc.h	/^	int	i_num;	\/\/inode的编号$/;"	m	struct:inode
+i_size	include/fs_misc.h	/^	u32	i_size;			\/\/文件大小，单位是Byte$/;"	m	struct:inode
+i_start_sect	include/fs_misc.h	/^	u32	i_start_sect;	\/\/该文件的起始扇区号$/;"	m	struct:inode
+id	include/cpu.h	/^  u8 id;                    \/\/ Local APIC ID; index into cpulist[] below$/;"	m	struct:cpu
+idt	include/global.h	/^EXTERN	GATE		idt[IDT_SIZE];$/;"	v
+idt_ptr	include/global.h	/^EXTERN	u8		    idt_ptr[6];	\/\/ 0~15:Limit  16~47:Base$/;"	v
+imcrp	include/mp.h	/^  u8 imcrp;$/;"	m	struct:mp
+in_byte	lib/kliba.asm	/^in_byte:$/;"	l
+in_hd_queue	kernel/hd.c	/^PRIVATE void in_hd_queue(HDQueue *hdq, RWInfo *p)$/;"	f
+in_process	kernel/tty.c	/^PUBLIC void in_process(u32 key)$/;"	f
+inc	boot/boot.asm	/^	inc	di$/;"	d
+inc	boot/loader.asm	/^	inc	di$/;"	d
+info	include/proc.h	/^	TREE_INFO info;				\/\/记录进程树关系	add by visual 2016.5.25$/;"	m	struct:s_proc
+inform_int	kernel/hd.c	/^PRIVATE void inform_int()$/;"	f
+init	kernel/memman.c	/^void init()	\/\/初始化$/;"	f
+init_8259A	kernel/i8259.c	/^PUBLIC void init_8259A()$/;"	f
+init_box	kernel/box.c	/^PUBLIC int init_box()$/;"	f
+init_clock	kernel/clock.c	/^PUBLIC void init_clock()$/;"	f
+init_descriptor	kernel/protect.c	/^PUBLIC void init_descriptor(DESCRIPTOR * p_desc, u32 base, u32 limit, u16 attribute)$/;"	f
+init_fs	kernel/fs.c	/^PUBLIC void init_fs() $/;"	f
+init_hd	kernel/hd.c	/^PUBLIC void init_hd()$/;"	f
+init_hd_queue	kernel/hd.c	/^PUBLIC void init_hd_queue(HDQueue *hdq)$/;"	f
+init_idt_desc	kernel/protect.c	/^PUBLIC void init_idt_desc(unsigned char vector, u8 desc_type, int_handler handler, unsigned char privilege)$/;"	f
+init_keyboard	kernel/keyboard.c	/^PUBLIC void init_keyboard()$/;"	f
+init_msg_queue	kernel/msgqueue.c	/^PRIVATE int init_msg_queue(int msqid)$/;"	f
+init_msg_queue_manage	kernel/msgqueue.c	/^PUBLIC int init_msg_queue_manage()$/;"	f
+init_page_pte	kernel/pagetbl.c	/^PUBLIC	u32 init_page_pte(u32 pid)$/;"	f
+init_prot	kernel/protect.c	/^PUBLIC void init_prot()$/;"	f
+init_ready_queue	kernel/proc.c	/^void init_ready_queue(struct ready_queue *rq)$/;"	f
+init_rwlock	kernel/rwlock.c	/^void init_rwlock(struct rwlock *rw)$/;"	f
+init_sema	kernel/semaphore.c	/^void init_sema(struct semaphore *sem, int val)$/;"	f
+init_wait_queue	kernel/semaphore.c	/^void init_wait_queue(struct wait_queue *wq)$/;"	f
+initial	kernel/ktest.c	/^void initial()$/;"	f
+initial1	kernel/ktest.c	/^void initial1()$/;"	f
+initial2	kernel/ktest.c	/^void initial2()$/;"	f
+initial3	kernel/ktest.c	/^void initial3()$/;"	f
+initial_eip	include/proc.h	/^	task_f	initial_eip;$/;"	m	struct:s_task
+initialize_processes	kernel/proc.c	/^PUBLIC int initialize_processes()$/;"	f
+initlock	kernel/spinlock.c	/^initlock(struct spinlock *lock, char *name)$/;"	f
+inode	include/fs_misc.h	/^struct inode {$/;"	s
+inode_isize_off	include/fs_misc.h	/^	u32	inode_isize_off;  \/**< Offset of `struct inode::i_size' *\/$/;"	m	struct:super_block
+inode_nr	include/fs_misc.h	/^	int	inode_nr;				 \/\/inode编号$/;"	m	struct:dir_entry
+inode_size	include/fs_misc.h	/^	u32	inode_size;       \/\/每个inode的大小为32Byte$/;"	m	struct:super_block
+inode_start_off	include/fs_misc.h	/^	u32	inode_start_off;  \/**< Offset of `struct inode::i_start_sect' *\/$/;"	m	struct:super_block
+inode_table	kernel/fs.c	/^PRIVATE struct inode 	   inode_table[NR_INODE]; 		\/\/存放内存中所有inode的内存缓冲区，对inode的操作就是对inode_table的操作$/;"	v	typeref:struct:inode
+inode_table_lock	kernel/global.c	/^PUBLIC  struct spinlock inode_table_lock;    \/\/added by mingxuan 2019-3-20$/;"	v	typeref:struct:spinlock
+inode_table_sem	kernel/global.c	/^PUBLIC  struct semaphore inode_table_sem; \/\/added by mingxuan 2019-3-28/;"	v	typeref:struct:semaphore
+instack	kernel/kernel.asm	/^instack:						;already in the irq-stack$/;"	l
+int_handler	include/type.h	/^typedef	void	(*int_handler)	();$/;"	t
+intena	include/cpu.h	/^  int intena;                  \/\/ Were interrupts enabled before pushcli?$/;"	m	struct:cpu
+interrupt_wait	kernel/hd.c	/^PRIVATE void interrupt_wait()$/;"	f
+inval_opcode	kernel/kernel.asm	/^inval_opcode:					; vector_no	= 6$/;"	l
+inval_tss	kernel/kernel.asm	/^inval_tss:						; vector_no	= 10$/;"	l
+io_clock_handler	kernel/clock.c	/^PUBLIC void io_clock_handler(int irq)$/;"	f
+ioapic	kernel/ioapic.c	/^struct ioapic {$/;"	s	file:
+ioapic	kernel/ioapic.c	/^volatile struct ioapic *ioapic;$/;"	v	typeref:struct:ioapic
+ioapicenable	kernel/ioapic.c	/^ioapicenable(int irq, int cpunum)$/;"	f
+ioapicid	kernel/mp.c	/^u8 ioapicid;$/;"	v
+ioapicinit	kernel/ioapic.c	/^ioapicinit(void)$/;"	f
+ioapicread	kernel/ioapic.c	/^ioapicread(int reg)$/;"	f	file:
+ioapicwrite	kernel/ioapic.c	/^ioapicwrite(int reg, u32 data)$/;"	f	file:
+iobase	include/protect.h	/^	u16	iobase;	\/* I\/O位图基址大于或等于TSS段界限，就表示没有I\/O许可位图 *\/$/;"	m	struct:s_tss
+irq_handler	include/type.h	/^typedef	void	(*irq_handler)	(int irq);$/;"	t
+irq_table	kernel/global.c	/^PUBLIC	irq_handler		irq_table[NR_IRQ];$/;"	v
+is_special	include/fs_const.h	98;"	d
+ismp	kernel/mp.c	/^int ismp;	                         \/\/标志位，表示是否是MP系统$/;"	v
+itoa	lib/klib.c	/^PUBLIC char * itoa(char * str, int num)\/* 数字前面的 0 不被显示出来, 比如 0000B800 被显示成 B800 *\/$/;"	f
+k_reenter	include/global.h	/^EXTERN	u32		    k_reenter;$/;"	v
+kb_in	kernel/keyboard.c	/^PRIVATE KB_INPUT	kb_in;$/;"	v
+kbuf	include/hd.h	/^	void *kbuf;$/;"	m	struct:rdwt_info
+kernel_esp	include/proc.h	/^	u32	kernel_esp;	\/* <- 'popad' will ignore it			│			*\/$/;"	m	struct:s_stackframe
+kernel_initial	include/global.h	/^EXTERN	int		    kernel_initial;$/;"	v
+kernel_lin_base	include/proc.h	/^	u32 kernel_lin_base;					\/\/内核基址$/;"	m	struct:s_lin_memmap
+kernel_lin_limit	include/proc.h	/^	u32 kernel_lin_limit;					\/\/内核界限$/;"	m	struct:s_lin_memmap
+kernel_main	kernel/main.c	/^PUBLIC int kernel_main()$/;"	f
+keyboard_handler	kernel/keyboard.c	/^PUBLIC void keyboard_handler(int irq)$/;"	f
+keyboard_read	kernel/keyboard.c	/^PUBLIC void keyboard_read()$/;"	f
+keymap	include/keymap.h	/^u32 keymap[NR_SCAN_CODES * MAP_COLS] = {$/;"	v
+kmalloc	kernel/syscall.asm	/^kmalloc:$/;"	l
+kmalloc_4k	kernel/syscall.asm	/^kmalloc_4k:$/;"	l
+lapic	kernel/lapic.c	/^volatile u32 *lapic;  \/\/ Initialized in mp.c$/;"	v
+lapicaddr	include/mp.h	/^  u32 *lapicaddr;              \/\/ address of local APIC$/;"	m	struct:mpconf
+lapiceoi	kernel/lapic.c	/^lapiceoi(void)$/;"	f
+lapicinit	kernel/lapic.c	/^lapicinit(void)$/;"	f
+lapicstartap	kernel/lapic.c	/^lapicstartap(u8 apicid, u32 addr)$/;"	f
+lapicw	kernel/lapic.c	/^lapicw(u32 index, u32 value)$/;"	f	file:
+lba_high	include/hd.h	/^	u8	lba_high;\/\/写入REG_LBA_HIGH$/;"	m	struct:hd_cmd
+lba_low	include/hd.h	/^	u8	lba_low; \/\/写入REG_LBA_LOW$/;"	m	struct:hd_cmd
+lba_mid	include/hd.h	/^	u8	lba_mid; \/\/写入REG_LBA_MID	$/;"	m	struct:hd_cmd
+lcr3	include/x86.h	/^lcr3(u32 val)$/;"	f
+ldt	include/protect.h	/^	u32	ldt;$/;"	m	struct:s_tss
+ldt_seg_linear	kernel/proc.c	/^PUBLIC int ldt_seg_linear(PROCESS *p, int idx)$/;"	f
+ldt_sel	include/proc.h	/^	u16 ldt_sel;               \/* gdt selector giving ldt base and limit *\/$/;"	m	struct:s_proc
+ldts	include/proc.h	/^	DESCRIPTOR ldts[LDT_SIZE]; \/* local descriptors for code and data *\/$/;"	m	struct:s_proc
+length	include/mp.h	/^  u16 length;                \/\/ total table length$/;"	m	struct:mpconf
+length	include/mp.h	/^  u8 length;                 \/\/ 1$/;"	m	struct:mp
+lgdt	include/x86.h	/^lgdt(DESCRIPTOR *p, int size)$/;"	f
+lidt	include/x86.h	/^lidt(GATE *p, int size)$/;"	f
+limit_high_attr2	include/protect.h	/^	u8	limit_high_attr2;	\/* G(1) D(1) 0(1) AVL(1) LimitHigh(4) *\/$/;"	m	struct:s_descriptor
+limit_low	include/protect.h	/^	u16	limit_low;		\/* Limit *\/$/;"	m	struct:s_descriptor
+lin_mapping_ioapicPhy	kernel/pagetbl.c	/^PUBLIC void lin_mapping_ioapicPhy(u32 AddrLin,$/;"	f
+lin_mapping_lapicPhy	kernel/pagetbl.c	/^PUBLIC void lin_mapping_lapicPhy(u32 AddrLin,$/;"	f
+lin_mapping_phy	kernel/pagetbl.c	/^PUBLIC int lin_mapping_phy(u32 lin_addr,\/\/线性地址$/;"	f
+load_balance	kernel/proc.c	/^void load_balance()$/;"	f
+load_balance_lock	kernel/global.c	/^PUBLIC  struct spinlock load_balance_lock;	\/\/added by mingxuan 2019-4-3$/;"	v	typeref:struct:spinlock
+loadfs	include/x86.h	/^loadfs(u16 v)$/;"	f
+lock	include/rwlock.h	/^    volatile unsigned int lock;$/;"	m	struct:rwlock
+locked	include/spinlock.h	/^  u32 locked;   \/\/ Is the lock held?$/;"	m	struct:spinlock
+logical	include/hd.h	/^	struct part_info logical[NR_SUB_PER_DRIVE];	 \/\/记录所有逻辑分区的起始扇区和扇区数目  NR_SUB_PER_DRIVE=一块硬盘上最多有16*4=64个逻辑分区$/;"	m	struct:hd_info	typeref:struct:hd_info::part_info
+losts	include/memman.h	/^	u32 frees,maxfrees,lostsize,losts;	\/\/frees为当前空闲内存块数$/;"	m	struct:MEMMAN
+lostsize	include/memman.h	/^	u32 frees,maxfrees,lostsize,losts;	\/\/frees为当前空闲内存块数$/;"	m	struct:MEMMAN
+lseek	kernel/syscall.asm	/^lseek:$/;"	l
+ltr	include/x86.h	/^ltr(u16 sel)$/;"	f
+m1	include/type.h	/^		struct mess1 m1;$/;"	m	union:__anon2::__anon3	typeref:struct:__anon2::__anon3::mess1
+m1i1	include/type.h	/^	int m1i1;$/;"	m	struct:mess1
+m1i2	include/type.h	/^	int m1i2;$/;"	m	struct:mess1
+m1i3	include/type.h	/^	int m1i3;$/;"	m	struct:mess1
+m1i4	include/type.h	/^	int m1i4;$/;"	m	struct:mess1
+m2	include/type.h	/^		struct mess2 m2;$/;"	m	union:__anon2::__anon3	typeref:struct:__anon2::__anon3::mess2
+m2p1	include/type.h	/^	void* m2p1;$/;"	m	struct:mess2
+m2p2	include/type.h	/^	void* m2p2;$/;"	m	struct:mess2
+m2p3	include/type.h	/^	void* m2p3;$/;"	m	struct:mess2
+m2p4	include/type.h	/^	void* m2p4;$/;"	m	struct:mess2
+m3	include/type.h	/^		struct mess3 m3;$/;"	m	union:__anon2::__anon3	typeref:struct:__anon2::__anon3::mess3
+m3i1	include/type.h	/^	int	m3i1;$/;"	m	struct:mess3
+m3i2	include/type.h	/^	int	m3i2;$/;"	m	struct:mess3
+m3i3	include/type.h	/^	int	m3i3;$/;"	m	struct:mess3
+m3i4	include/type.h	/^	int	m3i4;$/;"	m	struct:mess3
+m3l1	include/type.h	/^	u64	m3l1;$/;"	m	struct:mess3
+m3l2	include/type.h	/^	u64	m3l2;$/;"	m	struct:mess3
+m3p1	include/type.h	/^	void*	m3p1;$/;"	m	struct:mess3
+m3p2	include/type.h	/^	void*	m3p2;$/;"	m	struct:mess3
+magic	include/fs_misc.h	/^	u32	magic;		  \/**< Magic number *\/$/;"	m	struct:super_block
+main	command/echo.c	/^int main(int argc, char* argv[])$/;"	f
+main	init/init.c	/^void main(int arg,char *argv[])$/;"	f
+main	init/init1.c	/^void main(int arg,char *argv[])$/;"	f
+main	init/init2.c	/^void main(int arg,char *argv[])$/;"	f
+main	init/init3.c	/^void main(int arg,char *argv[])$/;"	f
+malloc	kernel/syscall.asm	/^malloc:$/;"	l
+malloc_4k	kernel/syscall.asm	/^malloc_4k:$/;"	l
+max	include/fs_const.h	11;"	d
+maxfrees	include/memman.h	/^	u32 frees,maxfrees,lostsize,losts;	\/\/frees为当前空闲内存块数$/;"	m	struct:MEMMAN
+memarg	kernel/syscallc.c	/^struct memfree *memarg = 0;$/;"	v	typeref:struct:memfree
+memcmp	kernel/fs.c	/^PRIVATE int memcmp(const void * s1, const void *s2, int n)$/;"	f
+memcmp	kernel/mp.c	/^int memcmp(const void *v1, const void *v2, u32 n)$/;"	f
+memcpy	lib/string.asm	/^memcpy:$/;"	l
+memfree	include/global.h	/^struct memfree{$/;"	s
+memman	kernel/memman.c	/^struct MEMMAN *memman = &s_memman;\/\/(struct MEMMAN *) MEMMAN_ADDR;$/;"	v	typeref:struct:MEMMAN
+memman_alloc	kernel/memman.c	/^PUBLIC u32 memman_alloc(struct MEMMAN *man,u32 size)$/;"	f
+memman_alloc_4k	kernel/memman.c	/^PUBLIC u32 memman_alloc_4k(struct MEMMAN *man)$/;"	f
+memman_free	kernel/memman.c	/^PUBLIC u32 memman_free(struct MEMMAN *man, u32 addr, u32 size)$/;"	f
+memman_free_4k	kernel/memman.c	/^PUBLIC u32 memman_free_4k(struct MEMMAN *man, u32 addr)$/;"	f
+memman_init	kernel/memman.c	/^void memman_init(struct MEMMAN *man)$/;"	f
+memman_kalloc	kernel/memman.c	/^PUBLIC u32 memman_kalloc(struct MEMMAN *man,u32 size)$/;"	f
+memman_kalloc_4k	kernel/memman.c	/^PUBLIC u32 memman_kalloc_4k(struct MEMMAN *man)$/;"	f
+memman_test	kernel/memman.c	/^PUBLIC void memman_test()$/;"	f
+memman_total	kernel/memman.c	/^u32 memman_total(struct MEMMAN *man)$/;"	f
+memmap	include/proc.h	/^	LIN_MEMMAP	memmap;			\/\/线性内存分部信息 		add by visual 2016.5.4$/;"	m	struct:s_proc
+memset	lib/string.asm	/^memset:$/;"	l
+memtest	boot/loader.asm	/^memtest:$/;"	l
+mess1	include/type.h	/^struct mess1 {$/;"	s
+mess2	include/type.h	/^struct mess2 {$/;"	s
+mess3	include/type.h	/^struct mess3 {$/;"	s
+microdelay	kernel/lapic.c	/^microdelay(u32 us)$/;"	f
+migration	kernel/ktest.c	/^void migration()$/;"	f
+migration1	kernel/ktest.c	/^void migration1()$/;"	f
+migration2	kernel/ktest.c	/^void migration2()$/;"	f
+migration3	kernel/ktest.c	/^void migration3()$/;"	f
+milli_delay	kernel/clock.c	/^PUBLIC void milli_delay(int milli_sec)$/;"	f
+min	include/fs_const.h	12;"	d
+mkfs	kernel/fs.c	/^PRIVATE void mkfs()$/;"	f
+move_proc_num	kernel/proc.c	/^int move_proc_num(struct cpu *des_c, struct cpu *src_c)$/;"	f
+move_ready_proc	kernel/proc.c	/^void move_ready_proc(struct cpu *des_c, struct cpu *src_c)$/;"	f
+mp	include/mp.h	/^struct mp {             \/\/ floating pointer$/;"	s
+mpconf	include/mp.h	/^struct mpconf {         \/\/ configuration table header$/;"	s
+mpconfig	kernel/mp.c	/^static struct mpconf* mpconfig(struct mp **pmp)$/;"	f	file:
+mpenter	kernel/main.c	/^void mpenter(void)$/;"	f
+mpinit	kernel/mp.c	/^PUBLIC void mpinit()$/;"	f
+mpioapic	include/mp.h	/^struct mpioapic {       \/\/ I\/O APIC table entry$/;"	s
+mpproc	include/mp.h	/^struct mpproc {         \/\/ processor table entry$/;"	s
+mpsearch	kernel/mp.c	/^static struct mp* mpsearch(void)$/;"	f	file:
+mpsearch1	kernel/mp.c	/^static struct mp* mpsearch1(u32 a, int len)$/;"	f	file:
+mq_idle_prior	include/msgqueue.h	/^  MSG_QUEUE_NODE_PTR mq_idle_prior; \/\/消息空闲队列头指针$/;"	m	struct:msg_queue
+mq_use_prior	include/msgqueue.h	/^  MSG_QUEUE_NODE_PTR mq_use_prior; \/\/消息占用队列头指针 $/;"	m	struct:msg_queue
+mq_w_idle_prior	include/msgqueue.h	/^  P_QUEUE_NODE_PTR   mq_w_idle_prior; \/\/等待空闲队列$/;"	m	struct:msg_queue
+mq_w_use_prior	include/msgqueue.h	/^  P_QUEUE_NODE_PTR   mq_w_use_prior; \/\/等待占用队列$/;"	m	struct:msg_queue
+mqm_allocs	include/msgqueue.h	/^  int           *mqm_allocs;$/;"	m	struct:msg_queue_manage
+mqm_keys	include/msgqueue.h	/^  int           *mqm_keys;$/;"	m	struct:msg_queue_manage
+mqm_ptr	kernel/msgqueue.c	/^PRIVATE MSG_QUEUE_MANAGE_PTR mqm_ptr = NULL;$/;"	v
+mqm_queues_prior	include/msgqueue.h	/^  MSG_QUEUE_PTR *mqm_queues_prior;$/;"	m	struct:msg_queue_manage
+msg	include/hd.h	/^	MESSAGE *msg;$/;"	m	struct:rdwt_info
+msg_queue	include/msgqueue.h	/^typedef struct msg_queue {$/;"	s
+msg_queue_manage	include/msgqueue.h	/^typedef struct msg_queue_manage {$/;"	s
+msg_queue_node	include/msgqueue.h	/^typedef struct msg_queue_node {$/;"	s
+msg_queue_pop_node	kernel/msgqueue.c	/^PUBLIC int msg_queue_pop_node(int msqid, int size, int type, char *buffer, int flag)$/;"	f
+msg_queue_push_node	kernel/msgqueue.c	/^PUBLIC int msg_queue_push_node(int msqid, int size, int type, char *buffer, int flag) $/;"	f
+msgctl	kernel/syscall.asm	/^msgctl:$/;"	l
+msgget	kernel/syscall.asm	/^msgget:$/;"	l
+msgrcv	kernel/syscall.asm	/^msgrcv:$/;"	l
+msgsnd	kernel/syscall.asm	/^msgsnd:$/;"	l
+msgtype	include/type.h	/^enum msgtype {$/;"	g
+mul	boot/boot.asm	/^	mul	dh$/;"	d
+mul	boot/loader.asm	/^	mul	dh$/;"	d
+n_1st_sect	include/fs_misc.h	/^	u32	n_1st_sect;	 	  \/\/第一个扇区的扇区号$/;"	m	struct:super_block
+name	include/fs_misc.h	/^	char name[MAX_FILENAME_LEN]; \/\/文件名$/;"	m	struct:dir_entry
+name	include/proc.h	/^	char	name[32];$/;"	m	struct:s_task
+name	include/spinlock.h	/^  char *name;     \/\/ Name of lock.$/;"	m	struct:spinlock
+ncli	include/cpu.h	/^  int ncli;                    \/\/ Depth of pushcli nesting.$/;"	m	struct:cpu
+new_dir_entry	kernel/fs.c	/^PRIVATE void new_dir_entry(struct inode *dir_inode,int inode_nr,char *filename)$/;"	f
+new_inode	kernel/fs.c	/^PRIVATE struct inode *new_inode(int dev, int inode_nr, int start_sect)$/;"	f
+next	include/box.h	/^	struct p_queue_node *next;$/;"	m	struct:p_queue_node	typeref:struct:p_queue_node::p_queue_node
+next	include/box.h	/^  struct box_node *next;$/;"	m	struct:box_node	typeref:struct:box_node::box_node
+next	include/cpu.h	/^	struct ready_proc *next;$/;"	m	struct:ready_proc	typeref:struct:ready_proc::ready_proc
+next	include/hd.h	/^	struct rdwt_info *next;$/;"	m	struct:rdwt_info	typeref:struct:rdwt_info::rdwt_info
+next	include/msgqueue.h	/^	struct p_queue_node *next;$/;"	m	struct:p_queue_node	typeref:struct:p_queue_node::p_queue_node
+next	include/msgqueue.h	/^  struct msg_queue_node *next;$/;"	m	struct:msg_queue_node	typeref:struct:msg_queue_node::msg_queue_node
+next	include/semaphore.h	/^	struct wait_proc *next;$/;"	m	struct:wait_proc	typeref:struct:wait_proc::wait_proc
+nmi	kernel/kernel.asm	/^nmi:							; vector_no	= 2$/;"	l
+nr_imap_sects	include/fs_misc.h	/^	u32	nr_imap_sects;	  \/\/存储inode-map的扇区个数  		\/\/只需要1个扇区来做inode-map就足够了$/;"	m	struct:super_block
+nr_inode_sects	include/fs_misc.h	/^	u32	nr_inode_sects;   \/\/存储inode_array的扇区个数$/;"	m	struct:super_block
+nr_inodes	include/fs_misc.h	/^	u32	nr_inodes;	      \/\/文件系统中最多有多少个inode  \/\/文件系统中最多允许有4096个inode，这样只需要1个扇区来做inode-map就足够了$/;"	m	struct:super_block
+nr_ready_proc	include/cpu.h	/^  int nr_ready_proc;			    \/\/当前就绪队列中进程的总数	\/\/added by mingxuan 2019-4-3$/;"	m	struct:cpu
+nr_sects	include/fs_misc.h	/^	u32	nr_sects;	 	  \/\/文件系统中最多有多少个扇区	  \/\/来自于硬盘驱动程序$/;"	m	struct:super_block
+nr_sects	include/hd.h	/^	u32 nr_sects;	\/\/扇区数目$/;"	m	struct:part_ent
+nr_smap_sects	include/fs_misc.h	/^	u32	nr_smap_sects;	  \/\/存储sector-map的扇区个数 $/;"	m	struct:super_block
+num_1K	include/const.h	87;"	d
+num_4B	include/const.h	86;"	d
+num_4K	include/const.h	88;"	d
+num_4M	include/const.h	89;"	d
+num_lock	kernel/keyboard.c	/^PRIVATE	int	num_lock;	\/* Num Lock	 *\/$/;"	v
+oemlength	include/mp.h	/^  u16 oemlength;             \/\/ OEM table length$/;"	m	struct:mpconf
+oemtable	include/mp.h	/^  u32 *oemtable;               \/\/ OEM table pointer$/;"	m	struct:mpconf
+offset_high	include/protect.h	/^	u16	offset_high;	\/* Offset High *\/$/;"	m	struct:s_gate
+offset_low	include/protect.h	/^	u16	offset_low;	\/* Offset Low *\/$/;"	m	struct:s_gate
+open	kernel/syscall.asm	/^open:$/;"	l
+open_cnt	include/hd.h	/^	int				 open_cnt;$/;"	m	struct:hd_info
+org	boot/loader.asm	/^org  0100h$/;"	l
+out_byte	lib/kliba.asm	/^out_byte:$/;"	l
+out_hd_queue	kernel/hd.c	/^PRIVATE int out_hd_queue(HDQueue *hdq, RWInfo **p)$/;"	f
+overflow	kernel/kernel.asm	/^overflow:						; vector_no	= 4$/;"	l
+p_align	include/elf.h	/^	u32	p_align;				\/\/该program	对齐方式$/;"	m	struct:__anon5
+p_filesz	include/elf.h	/^	u32	p_filesz;				\/\/该program	在文件中的长度$/;"	m	struct:__anon5
+p_flags	include/elf.h	/^	u32	p_flags;				\/\/该program	读写权限$/;"	m	struct:__anon5
+p_head	include/keyboard.h	/^	char*	p_head;			\/* 指向缓冲区中下一个空闲位置 *\/$/;"	m	struct:s_kb
+p_memsz	include/elf.h	/^	u32	p_memsz;				\/\/该program	在内存中的长度（不一定和filesz相等）$/;"	m	struct:__anon5
+p_name	include/proc.h	/^	char p_name[16];           \/* name of the process *\/$/;"	m	struct:s_proc
+p_offset	include/elf.h	/^	u32	p_offset;				\/\/该program	在文件中的偏移量$/;"	m	struct:__anon5
+p_paddr	include/elf.h	/^	u32	p_paddr;				\/\/该program	应该放在这个物理地址（对只使用物理地址的系统有效）$/;"	m	struct:__anon5
+p_proc_next	include/global.h	/^EXTERN	PROCESS*	p_proc_next;    \/\/the next process that will run. added by xw, 18\/4\/26$/;"	v
+p_queue_node	include/box.h	/^typedef struct p_queue_node {$/;"	s
+p_queue_node	include/msgqueue.h	/^typedef struct p_queue_node {$/;"	s
+p_tail	include/keyboard.h	/^	char*	p_tail;			\/* 指向键盘任务应处理的字节 *\/$/;"	m	struct:s_kb
+p_type	include/elf.h	/^	u32	p_type;					\/\/该program 	类型$/;"	m	struct:__anon5
+p_vaddr	include/elf.h	/^	u32	p_vaddr;				\/\/该program	应该放在这个线性地址$/;"	m	struct:__anon5
+pad	kernel/ioapic.c	/^  u32 pad[3];$/;"	m	struct:ioapic	file:
+page_fault	kernel/kernel.asm	/^page_fault:						; vector_no	= 14$/;"	l
+page_fault_handler	kernel/pagetbl.c	/^PUBLIC void page_fault_handler(	u32 vec_no,\/\/异常编号，此时应该是14，代表缺页异常$/;"	f
+part_ent	include/hd.h	/^struct part_ent {$/;"	s
+part_info	include/hd.h	/^struct part_info $/;"	s
+partition	kernel/hd.c	/^PRIVATE void partition(int device, int style)$/;"	f
+pcs	include/spinlock.h	/^  u32 pcs[10];   \/\/ The call stack (an array of program counters)$/;"	m	struct:spinlock
+phy_exist	kernel/pagetbl.c	/^PUBLIC u32 phy_exist(u32 PageTblPhyAddr,\/\/页表物理地址$/;"	f
+phys_copy	include/string.h	14;"	d
+phys_set	include/string.h	15;"	d
+physaddr	include/mp.h	/^  void *physaddr;               \/\/ phys addr of MP config table$/;"	m	struct:mp
+pid	include/box.h	/^  int  pid;$/;"	m	struct:p_queue_node
+pid	include/box.h	/^  int pid;$/;"	m	struct:box_node
+pid	include/proc.h	/^	u32 pid;                   \/* process id passed in from MM *\/$/;"	m	struct:s_proc
+pop	boot/boot.asm	/^	pop	dx$/;"	d
+pop	boot/loader.asm	/^	pop	dx$/;"	d
+pop	kernel/kernel.asm	/^	pop		ds$/;"	d
+pop_node	kernel/box.c	/^PRIVATE int pop_node(BOX_NODE_PTR *box_pp, BOX_NODE_PTR *box_node_pp)$/;"	f
+pop_node	kernel/msgqueue.c	/^PRIVATE int pop_node(MSG_QUEUE_NODE_PTR *msg_queue_pp, MSG_QUEUE_NODE_PTR *msg_node_pp)$/;"	f
+pop_use_node	kernel/box.c	/^PRIVATE int pop_use_node(BOX_NODE_PTR *box_pp, BOX_NODE_PTR *box_node_pp, int pid)$/;"	f
+pop_use_node	kernel/msgqueue.c	/^PRIVATE int pop_use_node(MSG_QUEUE_NODE_PTR *msg_use_pp, MSG_QUEUE_NODE_PTR *msg_node_pp, int type)$/;"	f
+pop_w_idle_process	kernel/box.c	/^PRIVATE int pop_w_idle_process(P_QUEUE_NODE_PTR *w_idle_pp, PROCESS **pp_proc)$/;"	f
+pop_w_idle_process	kernel/msgqueue.c	/^PRIVATE int pop_w_idle_process(P_QUEUE_NODE_PTR *w_idle_pp, PROCESS **pp_proc)$/;"	f
+pop_w_use_process	kernel/box.c	/^PRIVATE int pop_w_use_process(P_QUEUE_NODE_PTR *w_use_pp, PROCESS **pp_proc, int pid)$/;"	f
+pop_w_use_process	kernel/msgqueue.c	/^PRIVATE int pop_w_use_process(P_QUEUE_NODE_PTR *w_use_pp, PROCESS **pp_proc, int type)$/;"	f
+port_read	lib/kliba.asm	/^port_read:$/;"	l
+port_write	lib/kliba.asm	/^port_write:$/;"	l
+position	kernel/file.c	/^static u32 position=0;$/;"	v	file:
+ppid	include/proc.h	/^	int ppid;			\/\/当前父进程	$/;"	m	struct:s_tree_info
+prev	include/cpu.h	/^  struct ready_proc *prev; \/\/added by mingxuan 2019-4-12$/;"	m	struct:ready_proc	typeref:struct:ready_proc::ready_proc
+primary	include/hd.h	/^	struct part_info primary[NR_PRIM_PER_DRIVE]; \/\/记录所有主分区的起始扇区和扇区数目  NR_PRIM_PER_DRIVE=整块硬盘(hd0)+4个主分区(hd[1~4])=5$/;"	m	struct:hd_info	typeref:struct:hd_info::part_info
+print_E	kernel/syscall.asm	/^print_E:$/;"	l
+print_F	kernel/syscall.asm	/^print_F:$/;"	l
+print_hdinfo	kernel/hd.c	/^PRIVATE void print_hdinfo(struct hd_info * hdi)$/;"	f
+print_identify_info	kernel/hd.c	/^PRIVATE void print_identify_info(u16* hdinfo)$/;"	f
+priority	include/proc.h	/^    int priority;			   \/\/不再表示ticks的基准值，而表示进程的优先级	$/;"	m	struct:s_proc
+proc	include/cpu.h	/^	PROCESS *proc;$/;"	m	struct:ready_proc
+proc	include/cpu.h	/^  PROCESS *proc;           \/\/ The currently-running process.$/;"	m	struct:cpu
+proc	include/hd.h	/^	PROCESS *proc;$/;"	m	struct:rdwt_info
+proc	include/semaphore.h	/^	PROCESS *proc;$/;"	m	struct:wait_proc
+proc2pid	include/proc.h	247;"	d
+proc_stat	include/proc.h	/^enum proc_stat 			{IDLE,READY,SLEEPING,KILLED,RUNNING,WAITING};	\/\/移植进程间通信时添加 \/\/modified by mingxuan 2019-5-13$/;"	g
+proc_table	kernel/global.c	/^PUBLIC	PROCESS			proc_table[NR_PCBS];		  \/\/edit by visual 2016.4.5	$/;"	v
+product	include/mp.h	/^  u8 product[20];            \/\/ product id$/;"	m	struct:mpconf
+pte_exist	kernel/pagetbl.c	/^PUBLIC u32 pte_exist(	u32 PageDirPhyAddr,\/\/页目录物理地址$/;"	f
+pthread	kernel/syscall.asm	/^pthread:$/;"	l
+pthread_heap_init	kernel/pthread.c	/^PRIVATE int pthread_heap_init(PROCESS* p_child,PROCESS *p_parent)$/;"	f
+pthread_pcb_cpy	kernel/pthread.c	/^PRIVATE int pthread_pcb_cpy(PROCESS *p_child,PROCESS *p_parent)$/;"	f
+pthread_stack_init	kernel/pthread.c	/^PRIVATE int pthread_stack_init(PROCESS* p_child,PROCESS *p_parent)$/;"	f
+pthread_update_info	kernel/pthread.c	/^PRIVATE int pthread_update_info(PROCESS* p_child,PROCESS *p_parent)$/;"	f
+ptlock	kernel/global.c	/^PUBLIC 	struct spinlock ptlock;	 \/\/proc_table锁  \/\/added by mingxuan 2019-1-16$/;"	v	typeref:struct:spinlock
+push	boot/boot.asm	/^	push	dx$/;"	d
+push	boot/loader.asm	/^	push	dx$/;"	d
+push	kernel/kernel.asm	/^        push    ds      ;  |$/;"	d
+push	kernel/kernel.asm	/^    push    ds      ;  |$/;"	d
+push_node	kernel/box.c	/^PRIVATE int push_node(BOX_NODE_PTR *box_pp, BOX_NODE_PTR box_node_p)$/;"	f
+push_node	kernel/msgqueue.c	/^PRIVATE int push_node(MSG_QUEUE_NODE_PTR *msg_queue_pp, MSG_QUEUE_NODE_PTR msg_node_p)$/;"	f
+push_use_node	kernel/box.c	/^PRIVATE int push_use_node(BOX_NODE_PTR *box_pp, BOX_NODE_PTR box_node_p)$/;"	f
+push_use_node	kernel/msgqueue.c	/^PRIVATE int push_use_node(MSG_QUEUE_NODE_PTR *msg_use_pp, MSG_QUEUE_NODE_PTR msg_node_p)$/;"	f
+push_w_idle_process	kernel/box.c	/^PRIVATE int push_w_idle_process(P_QUEUE_NODE_PTR *w_idle_pp, PROCESS *p_proc)$/;"	f
+push_w_idle_process	kernel/msgqueue.c	/^PRIVATE int push_w_idle_process(P_QUEUE_NODE_PTR *w_idle_pp, PROCESS *p_proc)$/;"	f
+push_w_use_process	kernel/box.c	/^PRIVATE int push_w_use_process(P_QUEUE_NODE_PTR *w_use_pp, PROCESS *p_proc, int pid)$/;"	f
+push_w_use_process	kernel/msgqueue.c	/^PRIVATE int push_w_use_process(P_QUEUE_NODE_PTR *w_use_pp, PROCESS *p_proc, int type)$/;"	f
+put_inode	kernel/fs.c	/^PRIVATE void put_inode(struct inode *pinode)$/;"	f
+put_irq_handler	kernel/i8259.c	/^PUBLIC void put_irq_handler(int irq, irq_handler handler)$/;"	f
+rdwt_info	include/hd.h	/^typedef struct rdwt_info$/;"	s
+read	kernel/syscall.asm	/^read:$/;"	l
+read_Ehdr	kernel/elf.c	/^void read_Ehdr(u32 fd,Elf32_Ehdr *File_Ehdr,u32 offset)$/;"	f
+read_Phdr	kernel/elf.c	/^void read_Phdr(u32 fd,Elf32_Phdr *File_Phdr,u32 offset)$/;"	f
+read_Shdr	kernel/elf.c	/^void read_Shdr(u32 fd,Elf32_Shdr *File_Shdr,u32 offset)$/;"	f
+read_cr2	kernel/kernel.asm	/^read_cr2:$/;"	l
+read_cr3	kernel/kernel.asm	/^read_cr3:$/;"	l
+read_elf	kernel/elf.c	/^PUBLIC void read_elf(u32 fd,Elf32_Ehdr* Echo_Ehdr,Elf32_Phdr Echo_Phdr[],Elf32_Shdr Echo_Shdr[])$/;"	f
+read_lock	include/rwlock.h	/^static inline void read_lock(struct rwlock *rw)$/;"	f
+read_lock_failed	kernel/kernel.asm	/^read_lock_failed:$/;"	l
+read_lock_failed_loop	kernel/kernel.asm	/^read_lock_failed_loop:  $/;"	l
+read_super_block	kernel/fs.c	/^PRIVATE void read_super_block(int dev)$/;"	f
+read_unlock	include/rwlock.h	/^static inline void read_unlock(struct rwlock *rw)$/;"	f
+ready	include/cpu.h	/^  struct ready_queue ready;    \/\/modified by mingxuan 2019-4-3$/;"	m	struct:cpu	typeref:struct:cpu::ready_queue
+ready_proc	include/cpu.h	/^struct ready_proc$/;"	s
+ready_queue	include/cpu.h	/^struct ready_queue$/;"	s
+real_close	kernel/fs.c	/^PRIVATE int real_close(int fd)$/;"	f
+real_lseek	kernel/fs.c	/^PRIVATE int real_lseek(int fd, int offset, int whence)$/;"	f
+real_open	kernel/fs.c	/^PRIVATE int real_open(const char *pathname, int flags)$/;"	f
+real_ppid	include/proc.h	/^	int real_ppid;  	\/\/亲父进程，创建它的那个进程$/;"	m	struct:s_tree_info
+real_read	kernel/fs.c	/^PRIVATE int real_read(int fd, void *buf, int count)$/;"	f
+real_unlink	kernel/fs.c	/^PRIVATE int real_unlink(const char * pathname)$/;"	f
+real_write	kernel/fs.c	/^PRIVATE int real_write(int fd, const void *buf, int count)$/;"	f
+rear	include/cpu.h	/^	struct ready_proc *rear;  \/\/就绪队列的尾指针$/;"	m	struct:ready_queue	typeref:struct:ready_queue::ready_proc
+rear	include/hd.h	/^	RWInfo *rear;$/;"	m	struct:__anon1
+rear	include/semaphore.h	/^	struct wait_proc *rear;  \/\/就绪队列的尾指针$/;"	m	struct:wait_queue	typeref:struct:wait_queue::wait_proc
+refresh_page_cache	kernel/kernel.asm	/^refresh_page_cache:$/;"	l
+reg	kernel/ioapic.c	/^  u32 reg;$/;"	m	struct:ioapic	file:
+regs	include/proc.h	/^	STACK_FRAME regs;          \/* process registers saved in stack frame *\/$/;"	m	struct:s_proc
+release	kernel/spinlock.c	/^release(struct spinlock *lock)$/;"	f
+remove_ready_queue	kernel/proc.c	/^int remove_ready_queue(struct ready_queue *rq, struct ready_proc **p)$/;"	f
+remove_ready_queue_index	kernel/proc.c	/^int remove_ready_queue_index(struct ready_queue *rq, struct ready_proc **p, int index) \/\/index从0开始$/;"	f
+remove_wait_queue	kernel/semaphore.c	/^int remove_wait_queue(struct wait_queue *wq, struct wait_proc **p)$/;"	f
+renew_env	kernel/kernel.asm	/^renew_env:$/;"	l
+renew_tss	kernel/protect.c	/^void renew_tss(void)$/;"	f
+reserved	include/mp.h	/^  u8 reserved;$/;"	m	struct:mpconf
+reserved	include/mp.h	/^  u8 reserved[3];$/;"	m	struct:mp
+reserved	include/mp.h	/^  u8 reserved[8];$/;"	m	struct:mpproc
+resort_ready_proc	kernel/ktest.c	/^void resort_ready_proc()$/;"	f
+restart_exception	kernel/kernel.asm	/^restart_exception:$/;"	l
+restart_initial	kernel/kernel.asm	/^restart_initial:$/;"	l
+restart_int	kernel/kernel.asm	/^restart_int:$/;"	l
+restart_restore	kernel/kernel.asm	/^restart_restore:	;从进程内核栈中弹出STACK_FRAME中的所有寄存器，进程进入用户态$/;"	l
+restart_syscall	kernel/kernel.asm	/^restart_syscall:$/;"	l
+retaddr	include/proc.h	/^	u32	retaddr;	\/* return address for assembly code save()	│			*\/$/;"	m	struct:s_stackframe
+root_inode	include/fs_misc.h	/^	u32	root_inode;       \/\/根目录区的inode编号 \/\/根目录文件的inode编号为1$/;"	m	struct:super_block
+root_inode	kernel/fs.c	/^PRIVATE struct inode	   *root_inode;$/;"	v	typeref:struct:inode
+rw_sector	kernel/fs.c	/^PRIVATE int rw_sector(int io_type, int dev, u64 pos, int bytes, int proc_nr, void* buf)$/;"	f
+rw_sector_sched	kernel/fs.c	/^PRIVATE int rw_sector_sched(int io_type, int dev, int pos, int bytes, int proc_nr, void* buf)$/;"	f
+rwlock	include/rwlock.h	/^struct rwlock $/;"	s
+s_addr	include/elf.h	/^	u32 s_addr;    	\/\/该section 的虚拟地址$/;"	m	struct:__anon6
+s_addralign	include/elf.h	/^	u32 s_addralign; \/\/该section 对齐方式$/;"	m	struct:__anon6
+s_descriptor	include/protect.h	/^typedef struct s_descriptor		\/* 共 8 个字节 *\/$/;"	s
+s_entsize	include/elf.h	/^	u32 s_entsize;	\/\/该section 若有固定项目，则给出固定项目的大小，如符号表$/;"	m	struct:__anon6
+s_flags	include/elf.h	/^	u32 s_flags;    \/\/该section 在进程虚拟地址空间中的属性$/;"	m	struct:__anon6
+s_gate	include/protect.h	/^typedef struct s_gate$/;"	s
+s_info	include/elf.h	/^	u32 s_info;		\/\/该section	附加信息$/;"	m	struct:__anon6
+s_kb	include/keyboard.h	/^typedef struct s_kb {$/;"	s
+s_lin_memmap	include/proc.h	/^typedef struct s_lin_memmap {\/\/线性地址分布结构体	edit by visual 2016.5.25$/;"	s
+s_link	include/elf.h	/^	u32 s_link; 	\/\/该section	头部表符号链接$/;"	m	struct:__anon6
+s_memman	kernel/memman.c	/^struct MEMMAN s_memman;$/;"	v	typeref:struct:MEMMAN
+s_name	include/elf.h	/^	u32 s_name;   	\/\/该section 段的名字$/;"	m	struct:__anon6
+s_offset	include/elf.h	/^	u32 s_offset;   \/\/该section 在文件中的偏移$/;"	m	struct:__anon6
+s_proc	include/proc.h	/^typedef struct s_proc {$/;"	s
+s_size	include/elf.h	/^	u32 s_size;    	\/\/该section 的长度$/;"	m	struct:__anon6
+s_stackframe	include/proc.h	/^typedef struct s_stackframe {	\/* proc_ptr points here				↑ Low			*\/$/;"	s
+s_task	include/proc.h	/^typedef struct s_task {$/;"	s
+s_tree_info	include/proc.h	/^typedef struct s_tree_info{\/\/进程树记录，包括父进程，子进程，子线程  \/\/add by visual 2016.5.25$/;"	s
+s_tss	include/protect.h	/^typedef struct s_tss {$/;"	s
+s_type	include/elf.h	/^	u32 s_type;    	\/\/该section 的类型，代码段，数据段，符号表等$/;"	m	struct:__anon6
+save_exception	kernel/kernel.asm	/^save_exception:$/;"	l
+save_int	kernel/kernel.asm	/^save_int:$/;"	l
+save_syscall	kernel/kernel.asm	/^save_syscall:			;can't modify EAX, for it contains syscall number$/;"	l
+sb_dev	include/fs_misc.h	/^	int	sb_dev; 	\/**< the super block's home device *\/$/;"	m	struct:super_block
+sched	kernel/kernel.asm	/^sched:$/;"	l
+schedule	kernel/proc.c	/^PUBLIC void schedule()	\/\/modified by mingxuan 2019-3-5$/;"	f
+scroll_lock	kernel/keyboard.c	/^PRIVATE	int	scroll_lock;	\/* Scroll Lock	 *\/$/;"	v
+search_file	kernel/fs.c	/^PRIVATE int search_file(char * path)$/;"	f
+seg2phys	kernel/protect.c	/^PUBLIC u32 seg2phys(u16 seg)$/;"	f
+segment_not_present	kernel/kernel.asm	/^segment_not_present:			; vector_no	= 11$/;"	l
+selector	include/protect.h	/^	u16	selector;	\/* Selector *\/$/;"	m	struct:s_gate
+semaphore	include/semaphore.h	/^struct semaphore $/;"	s
+sgdt	include/x86.h	/^sgdt(u8 cpuid)$/;"	f
+shift_l	kernel/keyboard.c	/^PRIVATE	int	shift_l;	\/* l shift state *\/$/;"	v
+shift_r	kernel/keyboard.c	/^PRIVATE	int	shift_r;	\/* r shift state *\/$/;"	v
+sidt	include/x86.h	/^sidt(u8 cpuid)$/;"	f
+signature	include/mp.h	/^  u8 signature[4];           \/\/ "PCMP"$/;"	m	struct:mpconf
+signature	include/mp.h	/^  u8 signature[4];           \/\/ "_MP_"$/;"	m	struct:mp
+signature	include/mp.h	/^  u8 signature[4];           \/\/ CPU signature$/;"	m	struct:mpproc
+single_step_exception	kernel/kernel.asm	/^single_step_exception:			; vector_no	= 1$/;"	l
+size	include/box.h	/^  int size;$/;"	m	struct:box_node
+size	include/global.h	/^	u32	size;$/;"	m	struct:memfree
+size	include/hd.h	/^	u32	size;	\/\/扇区数目$/;"	m	struct:part_info
+size	include/memman.h	/^	u32 addr,size;$/;"	m	struct:FREEINFO
+size	include/msgqueue.h	/^  int    size;$/;"	m	struct:msg_queue_node
+sleep	kernel/syscall.asm	/^sleep:$/;"	l
+sleepers	include/semaphore.h	/^	int sleepers;			 \/\/等待当前信号量而进入睡眠的进程个数$/;"	m	struct:semaphore
+source	include/type.h	/^	int source;$/;"	m	struct:__anon2
+specrev	include/mp.h	/^  u8 specrev;                \/\/ [14]$/;"	m	struct:mp
+spinlock	include/spinlock.h	/^struct spinlock {$/;"	s
+spurious_irq	kernel/i8259.c	/^PUBLIC void spurious_irq(int irq)$/;"	f
+ss	include/proc.h	/^	u32	ss;			\/*  ┛						┷High			*\/$/;"	m	struct:s_stackframe
+ss	include/protect.h	/^	u32	ss;$/;"	m	struct:s_tss
+ss0	include/protect.h	/^	u32	ss0;		\/*   "   segment  "  "    "        "     *\/$/;"	m	struct:s_tss
+ss1	include/protect.h	/^	u32	ss1;$/;"	m	struct:s_tss
+ss2	include/protect.h	/^	u32	ss2;$/;"	m	struct:s_tss
+stack	include/proc.h	/^	char 	  stack[INIT_STACK_SIZE\/sizeof(char)];$/;"	m	union:task_union
+stack_child_limit	include/proc.h	/^	u32 stack_child_limit;					\/\/分给子线程的栈的界限			 \/\/add by visual 2016.5.27$/;"	m	struct:s_lin_memmap
+stack_exception	kernel/kernel.asm	/^stack_exception:				; vector_no	= 12$/;"	l
+stack_lin_base	include/proc.h	/^	u32 stack_lin_base;						\/\/栈基址$/;"	m	struct:s_lin_memmap
+stack_lin_limit	include/proc.h	/^	u32 stack_lin_limit;					\/\/栈界限（使用时注意栈的生长方向）$/;"	m	struct:s_lin_memmap
+stacksize	include/proc.h	/^	int		stacksize;$/;"	m	struct:s_task
+start_cyl	include/hd.h	/^	u8 start_cyl;	 \/\/起始柱面号的低8位$/;"	m	struct:part_ent
+start_head	include/hd.h	/^	u8 start_head;   \/\/起始磁头号$/;"	m	struct:part_ent
+start_sect	include/hd.h	/^	u32 start_sect; \/\/起始扇区的LBA	$/;"	m	struct:part_ent
+start_sector	include/hd.h	/^	u8 start_sector; \/\/起始扇区号(仅用了低6位，高2位为起始柱面号的第8,9位)$/;"	m	struct:part_ent
+started	include/cpu.h	/^  int started;                  \/\/ modified by mingxuan 2019-4-1$/;"	m	struct:cpu
+startothers	kernel/main.c	/^void startothers(void)$/;"	f
+stat	include/proc.h	/^	enum proc_stat stat;		\/\/add by visual 2016.4.5$/;"	m	struct:s_proc	typeref:enum:s_proc::proc_stat
+sti	include/x86.h	/^sti(void)$/;"	f
+strcmp	kernel/fs.c	/^PRIVATE int strcmp(const char * s1, const char *s2)$/;"	f
+strcpy	lib/string.asm	/^strcpy:$/;"	l
+strip_path	kernel/fs.c	/^PRIVATE int strip_path(char * filename, const char * pathname, struct inode** ppinode)$/;"	f
+strlen	lib/string.asm	/^strlen:$/;"	l
+sum	kernel/mp.c	/^static u8 sum(u8 *addr, int len)$/;"	f	file:
+super_block	include/fs_misc.h	/^struct super_block {$/;"	s
+super_block	kernel/fs.c	/^PRIVATE struct super_block super_block[NR_SUPER_BLOCK]; \/\/存放内存中所有super_block的内存缓冲区，对sb的操作就是对super_block的操作$/;"	v	typeref:struct:super_block
+super_block_lock	kernel/global.c	/^PUBLIC  struct spinlock super_block_lock;	 \/\/added by mingxuan 2019-3-21$/;"	v	typeref:struct:spinlock
+switch_pde	kernel/pagetbl.c	/^PUBLIC	void switch_pde()$/;"	f
+sync_init	kernel/ktest.c	/^void sync_init()$/;"	f
+sync_inode	kernel/fs.c	/^PRIVATE void sync_inode(struct inode *p)$/;"	f
+sync_inode_lock	kernel/global.c	/^PUBLIC	struct spinlock	sync_inode_lock;	\/\/added by mingxuan 2019-3-25$/;"	v	typeref:struct:spinlock
+sys_boxdel	kernel/ipc.c	/^PUBLIC int sys_boxdel()$/;"	f
+sys_boxget	kernel/ipc.c	/^PUBLIC int sys_boxget()$/;"	f
+sys_boxrcv	kernel/ipc.c	/^PUBLIC int sys_boxrcv(u32 proc_esp)$/;"	f
+sys_boxsnd	kernel/ipc.c	/^PUBLIC int sys_boxsnd(u32 proc_esp)$/;"	f
+sys_call	kernel/kernel.asm	/^sys_call:$/;"	l
+sys_call_table	kernel/global.c	/^PUBLIC	system_call		sys_call_table[NR_SYS_CALL] = {	sys_get_ticks, 									\/\/1st$/;"	v
+sys_close	kernel/fs.c	/^PUBLIC int sys_close(void *uesp)$/;"	f
+sys_exec	kernel/exec.c	/^PUBLIC u32 sys_exec(char *path)$/;"	f
+sys_fork	kernel/fork.c	/^PUBLIC int sys_fork()$/;"	f
+sys_free	kernel/syscallc.c	/^PUBLIC int sys_free(void *arg)$/;"	f
+sys_free_4k	kernel/syscallc.c	/^PUBLIC int sys_free_4k(void* AddrLin)$/;"	f
+sys_get_cpuid	kernel/syscallc.c	/^PUBLIC int sys_get_cpuid()$/;"	f
+sys_get_pid	kernel/syscallc.c	/^PUBLIC int sys_get_pid()$/;"	f
+sys_get_ticks	kernel/syscallc.c	/^PUBLIC int sys_get_ticks()$/;"	f
+sys_id	include/hd.h	/^	u8 sys_id; \/\/分区类型$/;"	m	struct:part_ent
+sys_kmalloc	kernel/syscallc.c	/^PUBLIC void* sys_kmalloc(int size)$/;"	f
+sys_kmalloc_4k	kernel/syscallc.c	/^PUBLIC void* sys_kmalloc_4k()$/;"	f
+sys_lseek	kernel/fs.c	/^PUBLIC int sys_lseek(void *uesp)$/;"	f
+sys_malloc	kernel/syscallc.c	/^PUBLIC void* sys_malloc(int size)		$/;"	f
+sys_malloc_4k	kernel/syscallc.c	/^PUBLIC void* sys_malloc_4k()$/;"	f
+sys_msgctl	kernel/ipc.c	/^PUBLIC int sys_msgctl(u32 proc_esp)$/;"	f
+sys_msgget	kernel/ipc.c	/^PUBLIC int sys_msgget(u32 proc_esp)$/;"	f
+sys_msgrcv	kernel/ipc.c	/^PUBLIC int sys_msgrcv(u32 proc_esp)$/;"	f
+sys_msgsnd	kernel/ipc.c	/^PUBLIC int sys_msgsnd(u32 proc_esp)$/;"	f
+sys_open	kernel/fs.c	/^PUBLIC int sys_open(void *uesp)$/;"	f
+sys_print_E	kernel/testfunc.c	/^PUBLIC void sys_print_E()$/;"	f
+sys_print_F	kernel/testfunc.c	/^PUBLIC void sys_print_F()$/;"	f
+sys_pthread	kernel/pthread.c	/^PUBLIC int sys_pthread(void *entry)$/;"	f
+sys_read	kernel/fs.c	/^PUBLIC int sys_read(void *uesp)$/;"	f
+sys_sleep	kernel/proc.c	/^PUBLIC void sys_sleep(int n)$/;"	f
+sys_udisp_int	kernel/syscallc.c	/^PUBLIC void sys_udisp_int(int arg)$/;"	f
+sys_udisp_str	kernel/syscallc.c	/^PUBLIC void sys_udisp_str(char *arg)$/;"	f
+sys_unlink	kernel/fs.c	/^PUBLIC int sys_unlink(void *uesp)$/;"	f
+sys_wakeup	kernel/proc.c	/^PUBLIC void sys_wakeup(void *channel)$/;"	f
+sys_write	kernel/fs.c	/^PUBLIC int sys_write(void *uesp)$/;"	f
+sys_yield	kernel/proc.c	/^PUBLIC void sys_yield()$/;"	f
+system_call	include/type.h	/^typedef void*	system_call;$/;"	t
+szMemChkTitle	boot/loader.asm	/^szMemChkTitle		equ	BaseOfLoaderPhyAddr + _szMemChkTitle$/;"	d
+szRAMSize	boot/loader.asm	/^szRAMSize		equ	BaseOfLoaderPhyAddr + _szRAMSize$/;"	d
+szReturn	boot/loader.asm	/^szReturn		equ	BaseOfLoaderPhyAddr + _szReturn$/;"	d
+task	include/proc.h	/^	PROCESS_0 task;$/;"	m	union:task_union
+task_f	include/type.h	/^typedef	void	(*task_f)	();$/;"	t
+task_table	kernel/global.c	/^PUBLIC	TASK			task_table[NR_TASKS] = {\/\/pid=0x4~0x7，用作每颗cpu执行load_balance$/;"	v
+task_tty	kernel/tty.c	/^PUBLIC void task_tty()$/;"	f
+task_union	include/proc.h	/^typedef union task_union {$/;"	u
+text_hold	include/proc.h	/^	int text_hold;			\/\/是否拥有代码$/;"	m	struct:s_tree_info
+text_lin_base	include/proc.h	/^	u32 text_lin_base;						\/\/代码段基址$/;"	m	struct:s_lin_memmap
+text_lin_limit	include/proc.h	/^	u32 text_lin_limit;						\/\/代码段界限$/;"	m	struct:s_lin_memmap
+ticks	include/global.h	/^EXTERN	int		    ticks;$/;"	v
+ticks	include/proc.h	/^    int ticks;                 \/* remained ticks *\/$/;"	m	struct:s_proc
+times	boot/boot.asm	/^times 	510-($-$$)	db	0	; 填充剩下的空间，使生成的二进制代码恰好为512字节$/;"	l
+trap	include/protect.h	/^	u16	trap;$/;"	m	struct:s_tss
+tss	include/cpu.h	/^  TSS tss;                     \/\/added by mingxuan 2019-1-21$/;"	m	struct:cpu
+tss	include/global.h	/^EXTERN	TSS		    tss;$/;"	v
+type	include/mp.h	/^  u8 type;                   \/\/ MP system config type$/;"	m	struct:mp
+type	include/mp.h	/^  u8 type;                   \/\/ entry type (0)$/;"	m	struct:mpproc
+type	include/mp.h	/^  u8 type;                   \/\/ entry type (2)$/;"	m	struct:mpioapic
+type	include/msgqueue.h	/^  int    type;$/;"	m	struct:msg_queue_node
+type	include/msgqueue.h	/^  int  type;$/;"	m	struct:p_queue_node
+type	include/proc.h	/^	int type;			\/\/当前是进程还是线程$/;"	m	struct:s_tree_info
+type	include/type.h	/^	int type;$/;"	m	struct:__anon2
+u	include/type.h	/^	} u;$/;"	m	struct:__anon2	typeref:union:__anon2::__anon3
+u16	include/type.h	/^typedef	unsigned short		u16;$/;"	t
+u32	include/type.h	/^typedef	unsigned int		u32;$/;"	t
+u64	include/type.h	/^typedef	unsigned long long	u64;$/;"	t
+u8	include/type.h	/^typedef	unsigned char		u8;$/;"	t
+u_proc_sum	include/global.h	/^EXTERN  int         u_proc_sum; 		\/\/内核中用户进程\/线程数量 add by visual 2016.5.25$/;"	v
+udisp_int	kernel/syscall.asm	/^udisp_int:$/;"	l
+udisp_str	kernel/syscall.asm	/^udisp_str:$/;"	l
+unlink	kernel/syscall.asm	/^unlink:$/;"	l
+up	include/semaphore.h	/^static inline void up(struct semaphore *sem)$/;"	f
+up_wakeup	kernel/kernel.asm	/^up_wakeup:$/;"	l
+va2la	kernel/proc.c	/^PUBLIC void* va2la(int pid, void* va)$/;"	f
+version	include/mp.h	/^  u8 version;                \/\/ I\/O APIC version$/;"	m	struct:mpioapic
+version	include/mp.h	/^  u8 version;                \/\/ [14]$/;"	m	struct:mpconf
+version	include/mp.h	/^  u8 version;                \/\/ local APIC verison$/;"	m	struct:mpproc
+vir2phys	include/protect.h	161;"	d
+vmalloc	kernel/pagetbl.c	/^PUBLIC u32 vmalloc(	u32 size)$/;"	f
+vpage_lin_base	include/proc.h	/^	u32 vpage_lin_base;						\/\/保留内存基址$/;"	m	struct:s_lin_memmap
+vpage_lin_limit	include/proc.h	/^	u32 vpage_lin_limit;					\/\/保留内存界限$/;"	m	struct:s_lin_memmap
+wRootDirSizeForLoop	boot/boot.asm	/^wRootDirSizeForLoop	dw	RootDirSectors	; Root Directory 占用的扇区数, 在循环中会递减至零.$/;"	d
+wRootDirSizeForLoop	boot/loader.asm	/^wRootDirSizeForLoop	dw	RootDirSectors	; Root Directory 占用的扇区数$/;"	d
+wSectorNo	boot/boot.asm	/^wSectorNo		dw	0		; 要读取的扇区号$/;"	d
+wSectorNo	boot/loader.asm	/^wSectorNo		dw	0		; 要读取的扇区号$/;"	d
+wait	include/semaphore.h	/^	struct wait_queue wait; \/\/当前信号量的等待队列$/;"	m	struct:semaphore	typeref:struct:semaphore::wait_queue
+wait_init0	kernel/ktest.c	/^void wait_init0()$/;"	f
+wait_proc	include/semaphore.h	/^struct wait_proc$/;"	s
+wait_queue	include/semaphore.h	/^struct wait_queue$/;"	s
+waitfor	kernel/hd.c	/^PRIVATE int waitfor(int mask, int val, int timeout)$/;"	f
+waiting_to_ready	include/proc.h	/^	int waiting_to_ready;		\/\/移植进程间通信时添加 \/\/added by mingxuan 2019-5-13 $/;"	m	struct:s_proc
+wake_up_idle_process	kernel/box.c	/^PRIVATE int wake_up_idle_process(BOX_PTR bp)$/;"	f
+wake_up_idle_process	kernel/msgqueue.c	/^PRIVATE int wake_up_idle_process(MSG_QUEUE_PTR mqp)$/;"	f
+wake_up_use_process	kernel/box.c	/^PRIVATE int wake_up_use_process(BOX_PTR bp, int pid)$/;"	f
+wake_up_use_process	kernel/msgqueue.c	/^PRIVATE int wake_up_use_process(MSG_QUEUE_PTR mqp, int type)$/;"	f
+wakeup_migration	kernel/ktest.c	/^void wakeup_migration()$/;"	f
+write	kernel/syscall.asm	/^write:$/;"	l
+write_lock	include/rwlock.h	/^static inline void write_lock(struct rwlock *rw)$/;"	f
+write_lock_failed	kernel/kernel.asm	/^write_lock_failed:$/;"	l
+write_lock_failed_loop	kernel/kernel.asm	/^write_lock_failed_loop:  $/;"	l
+write_page_pde	kernel/pagetbl.c	/^PUBLIC void write_page_pde(	u32 PageDirPhyAddr,\/\/页目录物理地址$/;"	f
+write_page_pte	kernel/pagetbl.c	/^PUBLIC void write_page_pte(	u32 TblPhyAddr,\/\/页表物理地址$/;"	f
+write_unlock	include/rwlock.h	/^static inline void write_unlock(struct rwlock *rw)$/;"	f
+xchecksum	include/mp.h	/^  u8 xchecksum;              \/\/ extended table checksum$/;"	m	struct:mpconf
+xchg	include/x86.h	/^xchg(volatile u32 *addr, u32 newval)$/;"	f
+xlength	include/mp.h	/^  u16 xlength;               \/\/ extended table length$/;"	m	struct:mpconf
+yield	kernel/syscall.asm	/^yield:$/;"	l
